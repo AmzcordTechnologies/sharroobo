@@ -1,0 +1,119 @@
+h1>a:not(.btn), h2>a:not(.btn), h3>a:not(.btn), h4>a:not(.btn), h5>a:not(.btn), h6>a:not(.btn), p>a:not(.btn), li>a:not(.btn), blockquote>a:not(.btn), label>a:not(.btn), h1 small>a:not(.btn), h2 small>a:not(.btn), h3 small>a:not(.btn), h4 small>a:not(.btn), h5 small>a:not(.btn), h6 small>a:not(.btn), p small>a:not(.btn), li small>a:not(.btn), blockquote small>a:not(.btn), label small>a:not(.btn) {
+  color: #3a8590;
+  border-bottom: none;
+}
+
+div#main-menu nav.navbar {
+  background-color: rgb(0 0 0 / 10%);
+  transition: .5s;
+  padding: 0.7rem 1rem;
+}
+
+div#main-menu .scrolled-nav {
+  padding: 0 !important;
+}
+
+div#main-menu img {
+  transition: .5s;
+}
+
+div#main-menu .scrolled-nav .img-fluid {
+  padding: 5px;
+  transition: .5s;
+}
+
+div#main-menu ul.navbar-nav li.nav-item a.nav-link {
+  color: #343a40;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-family: 'Favorit', sans-serif;
+}
+
+div#main-menu ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #b6d9d6;
+  transition: 0.3s;
+}
+
+div#main-menu .navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+div#main-menu .navbar-toggler .icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #B6B6B6;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+
+div#main-menu .navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+div#main-menu .navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+div#main-menu .navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+div#main-menu .navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+div#main-menu .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+div#main-menu .navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+div#footer {
+  background-color: #4d50f4;
+  padding: 50px 40px 10px 40px;
+}
+div#footer  p {
+  margin-bottom: 12px;
+}
+div#footer p a {
+  color: #fff;
+  font-weight: 300;
+}
+div#footer p a:hover{
+  color: #fe615a;
+  transition: .3s;
+}
+div#footer address {
+  color: #fff;
+  font-weight: 300;
+  line-height: 30px;
+}
+div#footer .copyright p{
+  color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+
+
+/* div#main-banner {
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 100vh;
+background-position: top center;
+background-size: cover;
+} */
+/* div#main-banner .banner-caption {
+padding-top: 10%;
+} */
