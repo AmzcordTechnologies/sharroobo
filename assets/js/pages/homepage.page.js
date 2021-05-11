@@ -12,8 +12,11 @@ parasails.registerPage('homepage', {
   beforeMount: function() {
     //…
   },
-  mounted: async function(){
+  mounted: async function() {
     this._setHeroHeight();
+
+    var range = document.getElementById('g-range-value');
+
   },
 
   //  ╦╔╗╔╔╦╗╔═╗╦═╗╔═╗╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
@@ -28,14 +31,20 @@ parasails.registerPage('homepage', {
       }, 500);
     },
 
+    showRangeValue: function() {
+
+      range.innerHTML = rangeValue;
+
+    },
+
     // Private methods not tied to a particular DOM event are prefixed with _
     _setHeroHeight: function() {
       var $hero = this.$find('[purpose="full-page-hero"]');
       var headerHeight = $('[purpose="page-header"]').outerHeight();
       var heightToSet = $(window).height();
-      heightToSet = Math.max(heightToSet, 500);//« ensure min height of 500px - header height
-      heightToSet = Math.min(heightToSet, 1000);//« ensure max height of 1000px - header height
-      $hero.css('min-height', heightToSet - headerHeight+'px');
+      heightToSet = Math.max(heightToSet, 500); //« ensure min height of 500px - header height
+      heightToSet = Math.min(heightToSet, 1000); //« ensure max height of 1000px - header height
+      $hero.css('min-height', heightToSet - headerHeight + 'px');
     },
 
   }

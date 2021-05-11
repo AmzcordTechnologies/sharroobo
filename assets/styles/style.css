@@ -77,7 +77,7 @@ div#main-menu .navbar-toggler.collapsed .bottom-bar {
 }
 
 li.nav-item {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 
 div#footer {
@@ -130,7 +130,7 @@ b {
 }
 
 .caption {
-    padding: 25% 0% 0% 5%;
+  padding: 40% 0% 0% 2%;
 }
 
 b.responsable {
@@ -143,10 +143,173 @@ button.btn.btn-primary {
   border-radius: 13px;
   background-color: #4d50f4;
   border: 1px solid #4d50f4;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .main-banner .caption {
   padding: 15% 0% 10% 0%;
+}
+
+h1, .h1 {
+  font-size: 60px;
+}
+
+small, .small {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.container-fluid {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+img.img-fluid.logo {
+  height: 55px;
+}
+
+.container.progressbar {
+  padding-top: 200px;
+}
+
+label.priceRange {
+  font-weight: bold;
+}
+
+/* progressbar */
+.txt-gray {
+  color: #808080;
+}
+
+#g-range-container {
+  width: 370px;
+  border-radius: 10px;
+  margin: 200px auto 0 auto;
+  height: 10px;
+  padding-top: 6px;
+  border: 1px solid #CECECE;
+}
+
+#g-range-container .g-range {
+  width: 350px;
+  background-color: #72B2AA;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+#g-range-values-container {
+  width: 350px;
+  margin: 20px auto;
+}
+
+.txt-big-number {
+  text-align: center;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  top: 0px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  border-radius: 40px;
+  background-color: #4d50f4;
+  border: 1px solid #4d50f4;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: #4d50f4d1;
+  height: 10px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.simulation {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.container.progressbar {
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.value {
+  padding-left: 230px;
+}
+
+output#rangevalue1 {
+  color: #4d50f4;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+label.sign {
+  color: #4d50f4;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.row.radio-buttons {
+  margin-right: 200px;
+}
+
+.col-2.radioTest {
+  color: #4d50f4;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: left;
+  padding-top: 4px;
+}
+
+input#flexRadioDefault1 {
+  /* font-size: 120px; */
+  /* height: 1000px; */
+  border: 0px;
+  width: 100%;
+  height: 2em;
+}
+
+input#flexRadioDefault2 {
+  /* font-size: 120px; */
+  /* height: 1000px; */
+  border: 0px;
+  width: 100%;
+  height: 2em;
+}
+
+input#flexRadioDefault3 {
+  /* font-size: 120px; */
+  /* height: 1000px; */
+  border: 0px;
+  width: 100%;
+  height: 2em;
+}
+
+.halfCircle {
+  background-color: #f6f0e8;
+  padding-bottom: 120px;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  /* padding-right: 150px; */
+}
+
+.avarage {
+  text-align: end;
+}
+
+label.price {
+    font-weight: bold;
+    color: #4d50f4;
+}
+
+.col-6.avarageCol {
+    width: 650px;
 }
 
 /* #faf6ee */
