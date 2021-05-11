@@ -28,7 +28,7 @@ div#main-menu ul.navbar-nav li.nav-item a.nav-link {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: .5px;
-  font-family: 'Favorit', sans-serif;
+  /* font-family: 'Favorit', sans-serif; */
 }
 
 div#main-menu ul.navbar-nav li.nav-item a.nav-link:hover {
@@ -76,44 +76,77 @@ div#main-menu .navbar-toggler.collapsed .bottom-bar {
   transform: rotate(0);
 }
 
+li.nav-item {
+    padding-left: 50px;
+}
+
 div#footer {
   background-color: #4d50f4;
   padding: 50px 40px 10px 40px;
 }
-div#footer  p {
+
+div#footer p {
   margin-bottom: 12px;
 }
+
 div#footer p a {
   color: #fff;
   font-weight: 300;
 }
-div#footer p a:hover{
+
+div#footer p a:hover {
   color: #fe615a;
   transition: .3s;
 }
+
 div#footer address {
   color: #fff;
   font-weight: 300;
   line-height: 30px;
 }
-div#footer .copyright p{
+
+div#footer .copyright p {
   color: #fff;
-    font-weight: 300;
-    font-size: 12px;
-    margin: 0;
-    padding-top: 10px;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0;
+  padding-top: 10px;
 }
 
+p.footer {
+  padding-bottom: 10px;
+}
 
+img.img-fluid.pb-3.footer {
+  height: 90px;
+}
 
-/* div#main-banner {
-position: relative;
-overflow: hidden;
-width: 100%;
-height: 100vh;
-background-position: top center;
-background-size: cover;
-} */
-/* div#main-banner .banner-caption {
-padding-top: 10%;
-} */
+b {
+  font-weight: 700;
+}
+
+.row.coverRow {
+  background-color: #faf6ee;
+}
+
+.caption {
+    padding: 25% 0% 0% 5%;
+}
+
+b.responsable {
+  color: #4d50f4;
+}
+
+button.btn.btn-primary {
+  width: 200px;
+  height: 50px;
+  border-radius: 13px;
+  background-color: #4d50f4;
+  border: 1px solid #4d50f4;
+}
+
+.main-banner .caption {
+  padding: 15% 0% 10% 0%;
+}
+
+/* #faf6ee */
