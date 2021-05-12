@@ -51,7 +51,8 @@
   div#main-menu .navbar-collapse.show {
     left: 50%;
     transition: all 0.3s ease;
-    background: #faf6ee;
+    background: #9381ff;
+    color: white;
   }
 
   div#main-menu .fixed-top-menu{
