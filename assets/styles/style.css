@@ -246,7 +246,7 @@ input[type="range"] {
 }
 
 .simulation {
-  padding-top: 180px;
+  padding-top: 30px;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -343,4 +343,304 @@ label.price {
   padding-left: 110px;
 }
 
-/* #faf6ee */
+/* SECTION BELOV THE COVER */
+body {
+  overflow-x: hidden;
+}
+
+.AvisVerifiesInline__stars__icon {
+  margin-right: 3px;
+  display: inline-block;
+}
+
+.icon {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.icon svg {
+  color: #e8a215;
+}
+
+.fadetext {
+  color: #8794a4;
+}
+
+.headl {
+  font-family: 'raleway', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.head2 {
+  font-family: 'raleway ', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.text1 {
+  font-family: 'raleway ', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text2 {}
+
+.block--new {
+  padding: 6% 6%;
+}
+
+@media (min-width: 1800px) .block--new {
+  padding: 80px 160px;
+}
+
+@media (min-width: 1200px) .block--new {
+  padding: 80px 120px;
+}
+
+@media (min-width: 900px) .block--new {
+  padding: 80px 80px;
+}
+
+@media (min-width: 600px) .block--new {
+  padding: 80px 40px;
+}
+
+.ballonsec {
+  background-color: #faf6ee;
+}
+
+.Balloon__image {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+}
+
+button.btn.btn-primary {
+  width: 200px;
+  height: 50px;
+  border-radius: 13px;
+  background-color: #4d50f4;
+  border: 1px solid #4d50f4;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.balloncontent {
+  margin: 200px 0px 0px 50px;
+  position: static;
+  top: 30%;
+  left: 10%;
+}
+
+@media (max-width : 990px) {
+  .balloncontent {
+    margin: 50px 0px 0px 20px;
+  }
+}
+
+.bluetxt {
+  color: #4d50f4;
+}
+
+.test {
+  margin: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: -15px;
+}
+
+/* Vertical CARASOL */
+.carousel-inner, .carousel, .carousel-item, .container, .fill {
+  /* height: 100%; */
+  min-height: 400px;
+  /* width: 100%; */
+  background-position: center center;
+  background-size: cover;
+}
+
+.slide-wrapper {
+  display: inline;
+}
+
+.slide-wrapper .container {
+  padding: 0;
+}
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+.carousel-inner>.carousel-item.carousel-item-next,
+.carousel-inner>.carousel-item.active.carousel-item-right {
+  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  top: 0;
+}
+
+.carousel-inner>.carousel-item.carousel-item-prev,
+.carousel-inner>.carousel-item.active.carousel-item-left {
+  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  top: 0;
+}
+
+.carousel-inner>.carousel-item.next.carousel-item-left,
+.carousel-inner>.carousel-item.carousel-item-prev.carousel-item-right,
+.carousel-inner>.carousel-item.active {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  ;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  top: 0;
+}
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.carousel-inner, .carousel, .carousel-item, .container, .fill {
+  /* height: 100%; */
+  min-height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slide-wrapper {
+  display: inline;
+}
+
+.slide-wrapper .container {
+  padding: 0;
+}
+
+/*------------------------------ vertical bootstrap slider----------------------------*/
+.carousel-inner>.carousel-item.carousel-item-next,
+.carousel-inner>.carousel-item.active.carousel-item-right {
+  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  top: 0;
+}
+
+.carousel-inner>.carousel-item.carousel-item-prev,
+.carousel-inner>.carousel-item.active.carousel-item-left {
+  transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  -moz-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -o-transform: translate3d(0, -100%, 0);
+  top: 0;
+}
+
+.carousel-inner>.carousel-item.next.carousel-item-left,
+.carousel-inner>.carousel-item.carousel-item-prev.carousel-item-right,
+.carousel-inner>.carousel-item.active {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  ;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  top: 0;
+}
+
+/*------------------------------- vertical carousel indicators ------------------------------*/
+.carousel-indicators {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  right: 200px;
+  /* left: auto; */
+  width: auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.carousel-indicators li {
+  display: block;
+  margin-bottom: 100px;
+  border: 1px solid #9381ff96;
+  background-color: #9381ff96;
+  height: 3px;
+}
+
+.carousel-indicators li.active {
+  margin-bottom: 10px;
+  background: #4d50f4;
+  width: 120px;
+  height: 8px;
+  border-radius: 10px;
+  position: initial !important;
+}
+
+img.slideImg {
+  height: 600px;
+}
+
+.col-6.slideTest {
+  padding-top: 200px;
+  text-align: left !important;
+}
+
+ol.carousel-indicators {
+  background-color: #9381ff;
+  max-width: 200px;
+  height: 8px !important;
+  border-radius: 50px;
+}
+
+.slide-wrapper .container {
+  padding: 0;
+  padding-left: 120px;
+}
+
+p.headl.Slider {
+  font-size: 30px;
+}
+
+.col-2.timeCaseusal1 {
+  padding-top: 200px;
+}
+
+.carousel1.second {
+  padding-top: 55px;
+}
+
+.carousel1.third {
+  padding-top: 70px;
+}
+
+span.disableTxt {
+  color: rgb(0 0 0 / 20%);
+}
+
+.col-2.timeCaseusal2 {
+  padding-top: 280px;
+}
+
+.col-2.timeCaseusal4 {
+  padding-top: 380px;
+}

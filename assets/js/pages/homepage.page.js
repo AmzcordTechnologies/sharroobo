@@ -3,13 +3,14 @@ parasails.registerPage('homepage', {
   //  ║║║║║ ║ ║╠═╣║    ╚═╗ ║ ╠═╣ ║ ║╣
   //  ╩╝╚╝╩ ╩ ╩╩ ╩╩═╝  ╚═╝ ╩ ╩ ╩ ╩ ╚═╝
   data: {
-    //…
+    slideIndex: '1',
   },
 
   //  ╦  ╦╔═╗╔═╗╔═╗╦ ╦╔═╗╦  ╔═╗
   //  ║  ║╠╣ ║╣ ║  ╚╦╝║  ║  ║╣
   //  ╩═╝╩╚  ╚═╝╚═╝ ╩ ╚═╝╩═╝╚═╝
   beforeMount: function() {
+
     //…
   },
   mounted: async function() {
@@ -17,6 +18,50 @@ parasails.registerPage('homepage', {
 
     var range = document.getElementById('g-range-value');
 
+    $(document).ready(function() {
+      $("#news-slider").owlCarousel({
+        items: 5,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsMobile: [600, 1],
+        navigation: true,
+        navigationText: ["1", "2"],
+        pagination: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        loop: true,
+      });
+    });
+
+    $(document).ready(function() {
+      $("#mobile-news-slider").owlCarousel({
+        items: 1,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsMobile: [600, 1],
+        navigation: true,
+        navigationText: ["1", "2"],
+        pagination: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        loop: true,
+      });
+    });
+
+    $(document).ready(function() {
+      $("#tab-slider").owlCarousel({
+        items: 3,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsMobile: [600, 1],
+        navigation: true,
+        navigationText: ["", ""],
+        pagination: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        loop: true,
+      });
+    });
   },
 
   //  ╦╔╗╔╔╦╗╔═╗╦═╗╔═╗╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
