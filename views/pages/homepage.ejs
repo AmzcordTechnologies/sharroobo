@@ -79,8 +79,8 @@
           <div class="caption">
             <div class="laondingpageTest">
               <div class="">
-                <h1 style="font-size: 50px;">Le micro-crédit simple,<br>
-                  rapide, <b class="responsable">responsable.</b></h1><br>
+                <p class="headl iphoneMobileview">Le micro-crédit simple,<br>
+                  rapide, <b class="responsable">responsable.</b></p><br>
                 <small>
                   Votre prêt en 24h, jusqu’à 600 euros.<br>
                   10 fois moins cher qu’un découvert.
@@ -134,8 +134,13 @@
   <div class="block--new container-fluid">
     <div class="row">
       <div class="col-md-8">
-        <p class="headl mt-5 mb-1">Pourquoi nos<span class="bluetxt"> 100,000 </span> </br> clients nous recommandent ?
+
+        <p class="headl mt-5 mb-1 d-none d-xl-block">Pourquoi nos<span class="bluetxt"> 100,000 </span> </br> clients nous recommandent ?
         </p>
+        <p class="headl iphoneMobileview mt-5 mb-1 d-block d-sm-none">Pourquoi nos<span class="bluetxt"> 100,000 </span> </br> clients nous recommandent ?
+        </p>
+
+
       </div>
       <div class="col-md-4">
         <div class="AvisVerifiesInline__stars__icon icon mt-5">
@@ -1236,11 +1241,12 @@
 
 
 
-  <div class="block--new ">
+  <div class="block--new d-none d-xl-block">
     <p class="headl" align="center">Une approche <span class="bluetxt">rafraîchissante </span>du crédit </p>
+  </div>
 
-
-
+  <div class="block--new d-block d-sm-none">
+    <p class="headl iphoneMobileview" align="center">Une approche <span class="bluetxt">rafraîchissante </span>du crédit </p>
   </div>
 
   <div class="container-fluid p-0">
@@ -1249,15 +1255,32 @@
       <div class="col-1">
 
       </div>
-      <div class="col mt-5 pt-5">
-        <p class="headl whitetext mt-5 pt-5" align="left">Découvrez </br>l’application finfrog ! </p>
-        <p class="text1 whitetext" align="left">Bientôt de nouvelles fonctionnalités pour vous aider à anticiper les </br>découverts.</p>
+      <div class="col mt-5">
 
-        <img src="/images/badge_app_store.svg" width="150" alt=""> <img src="/images/badge_google_play.png" alt="" width="160">
+
+        <div class="d-none d-xl-block">
+          <p class="headl whitetext mt-5 pt-5" align="left">Découvrez </br>l’application finfrog ! </p>
+          <p class="text1 whitetext" align="left">Bientôt de nouvelles fonctionnalités pour vous aider à anticiper les </br>découverts.</p>
+        </div>
+
+        <div class="d-block d-sm-none">
+          <p class="headl whitetext mt-5 iphoneMobileview" align="left">Découvrez </br>l’application finfrog ! </p>
+          <p class="text1 whitetext iphoneMobileview" align="left">Bientôt de nouvelles fonctionnalités pour vous aider à anticiper les </br>découverts.</p>
+        </div>
+
+
+        <div class="inline">
+          <img src="/images/badge_app_store.svg" width="150" alt="">
+          <img src="/images/badge_google_play.png" alt="" width="160">
+        </div>
 
       </div>
-      <div class="col p-0">
+      <div class="col p-0 d-none d-xl-block">
         <img src="/images/app-screens.png" alt="">
+      </div>
+
+      <div class="d-block d-sm-none">
+        <img class="imageMobileView" src="/images/app-screens.png" alt="">
       </div>
 
     </div>
@@ -1265,51 +1288,68 @@
 
   </div>
 
-  <div class="block--new ">
-    <p class="headl" align="center"><span class="bluetxt">Sécurité des données </span> </br>et transactions bancaires
+  <div class="block--new">
+    <p class="headl d-none d-xl-block" align="center"><span class="bluetxt">Sécurité des données </span> </br>et transactions bancaires
+    </p>
+    <p class="headl iphoneMobileview d-block d-sm-none" align="center"><span class="bluetxt">Sécurité des données </span> </br>et transactions bancaires
     </p>
 
-    <div class="row">
-      <div class="col-1">
-
+    <div class="d-none d-xl-block">
+      <div class="row ">
+        <div class="col-1">
+        </div>
+        <div class="col pt-5">
+          <img src="/images/img-securite@2x.png" alt="" align="center" width="140" class="center center pt-4">
+          <p class="text1 center pt-3" align="center">Connexion sécurisée HTTPS </br>Chiffrement RSA des données</br>Conformité avec la RGPD.</p>
+        </div>
+        <div class="col pt-5">
+          <img src="/images/img-payment-card@2x.png" alt="" align="center" width="140" class="center pt-4">
+          <p class="text1 center pt-3" align="center">Identifiants non stockés</br>Relevés bancaires avec Budget Insight</br>Transactions avec MangoPay.</p>
+        </div>
+        <div class="col-1">
+        </div>
       </div>
-      <div class="col pt-5">
+    </div>
+
+
+    <div class="row d-block d-sm-none">
+      <div class="">
+      </div>
+      <div class="">
         <img src="/images/img-securite@2x.png" alt="" align="center" width="140" class="center center pt-4">
-        <p class="text1 center pt-3" align="center">Connexion sécurisée HTTPS </br>Chiffrement RSA des données</br>Conformité avec la RGPD.</p>
-
-
-      </div>
-
-      <div class="col pt-5">
+        <p class="text1 responsive center pt-3" align="center">Connexion sécurisée HTTPS </br>Chiffrement RSA des données</br>Conformité avec la RGPD.</p>
+      </div><br>
+      <div class="">
         <img src="/images/img-payment-card@2x.png" alt="" align="center" width="140" class="center pt-4">
-        <p class="text1 center pt-3" align="center">Identifiants non stockés</br>Relevés bancaires avec Budget Insight</br>Transactions avec MangoPay.</p>
-
-
+        <p class="text1 responsive center pt-3" align="center">Identifiants non stockés</br>Relevés bancaires avec Budget Insight</br>Transactions avec MangoPay.</p>
       </div>
-      <div class="col-1">
-
+      <div class="">
       </div>
     </div>
 
     <div class="d-flex justify-content-center">
       <button type="button" class="btn btn-primary mt-5" align="center">En savoir plus&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-
     </div>
 
 
   </div>
 
   <div class="block--new ">
-    <p class="headl" align="center">Un service encadré par</br><span class="bluetxt">la réglementation française</span>
+    <p class="headl d-none d-xl-block" align="center">Un service encadré par</br><span class="bluetxt">la réglementation française</span>
+    <p class="headl iphoneMobileview d-block d-sm-none" align="center">Un service encadré par</br><span class="bluetxt">la réglementation française</span>
     <div class="row mt-5 mt-5">
       <div class="col-1">
       </div>
       <div class="col-md-4">
-        <p class="text1 mt-4 pt-3 ml-5 pl-5" align="left">Finfrog est un intermédiaire en financement participatif enregistré à l’ORIAS et encadré par les autorités françaises (ACPR - Banque de France)</span>
+        <p class="text1 mt-4 d-none d-xl-block" align="left">Finfrog est un intermédiaire en financement participatif enregistré à l’ORIAS et encadré par les autorités françaises (ACPR - Banque de France)</span>
+        <p class="text1 responsive mt-4 d-block d-sm-none" align="left">Finfrog est un intermédiaire en financement participatif enregistré à l’ORIAS et encadré par les autorités françaises (ACPR - Banque de France)</span>
         </p>
       </div>
-      <div class="col-md-6">
-        <img src="/images/11.jpg " alt="" height="150px" class="threeImages"> <img src="/images/2.jpg" alt="" height="150px" class="threeImages" > <img src="/images/3.jpg" alt="" height="150px" class="threeImages">
+      <div class="col-md-6 d-none d-xl-block">
+        <img src="/images/11.jpg " alt="" height="150px" class="threeImages"> <img src="/images/2.jpg" alt="" height="150px" class="threeImages"> <img src="/images/3.jpg" alt="" height="150px" class="threeImages">
+      </div>
+      <div class="col-md-6 responsiveimagesthree d-block d-sm-none">
+        <img src="/images/11.jpg " alt="" height="150px" class="threeImages"> <img src="/images/2.jpg" alt="" height="150px" class="threeImages"> <img src="/images/3.jpg" alt="" height="150px" class="threeImages">
       </div>
       <div class="col-1">
 
