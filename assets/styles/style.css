@@ -564,7 +564,7 @@ button.btn.btn-primary {
 }
 
 /*------------------------------- vertical carousel indicators ------------------------------*/
-.carousel-indicators {
+.carousel-indicators.iphonecarousel {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -580,7 +580,7 @@ button.btn.btn-primary {
   transform: rotate(90deg);
 }
 
-.carousel-indicators li {
+.carousel-indicators.iphonecarousel li {
   display: block;
   margin-bottom: 100px;
   border: 1px solid #9381ff96;
@@ -588,7 +588,7 @@ button.btn.btn-primary {
   height: 3px;
 }
 
-.carousel-indicators li.active {
+.carousel-indicators.iphonecarousel li.active {
   margin-bottom: 10px;
   background: #4d50f4;
   width: 120px;
@@ -606,7 +606,7 @@ img.slideImg {
   text-align: left !important;
 }
 
-ol.carousel-indicators {
+ol.carousel-indicators.iphonecarousel {
   background-color: #9381ff;
   max-width: 200px;
   height: 8px !important;
@@ -651,3 +651,112 @@ span.disableTxt {
 }
 
 /* Mobile monile carocesl */
+.carousel-inner.iphoneMobileview {
+  /* background-color: red; */
+  text-align: center;
+  /* padding-top: 1000px; */
+}
+
+.carousel-indicators .active {
+  background-color: #4d50f4;
+  width: 100px;
+}
+
+li.iphoneMobileview {
+  background-color: #898b8d;
+}
+
+img.d-block.iphoneMobileview {
+  height: 350px;
+  padding-left: 90px;
+}
+
+p.headl.iphoneMobileview {
+  font-size: 40px;
+}
+
+p.headl.Slider.iphoneMobileview {
+  font-size: 26px;
+  padding-top: 25px;
+}
+
+.row.iphoneMobileview {
+  padding-left: 90px;
+}
+
+span.disableTxt.iphoneMobileview2 {
+  padding-left: 50px;
+}
+
+span.disableTxt.iphoneMobileview3 {
+  padding-left: 60px;
+}
+
+span.bluetxt.iphoneMobileview2 {
+  padding-left: 60px;
+}
+
+span.bluetxt.iphoneMobileview3 {
+  padding-left: 60px;
+}
+
+/* CHATHTHA  */
+.whitetext {
+  color: white;
+}
+
+.appmobile {
+  background-color: #9381ff;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logobackground {
+  background-image: url("/images/Logobackground-01.jpg");
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container1 {
+  text-align: center;
+}
+
+.lgo_img {
+  display: inline-block;
+}
+
+.logoimage2 {
+  height: 120px;
+  padding: 30px;
+}
+
+.logoimage3 {
+  height: 90px;
+  padding: 20px;
+}
+
+.spacetext {
+  height: 50px;
+}
+
+.vertical {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  height: 300px;
+  position: absolute;
+  left: 50%;
+}
+
+
+img.threeImages {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 40px;
+  display: inline;
+  border-radius: 12px;
+}
