@@ -91,9 +91,10 @@ li.nav-item {
 }
 
 .scroll {
-  background-color: #9381ff !important;
+  background-color: white !important;
   z-index: 1;
   color: red !important;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 div#footer {
@@ -644,3 +645,9 @@ span.disableTxt {
 .col-2.timeCaseusal4 {
   padding-top: 380px;
 }
+
+.container.slider {
+  padding-top: 70px;
+}
+
+/* Mobile monile carocesl */
