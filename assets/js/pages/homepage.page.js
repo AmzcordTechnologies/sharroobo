@@ -7,6 +7,7 @@ parasails.registerPage('homepage', {
     valueOfRange: '300',
     totalVatRange: '0',
     month: 3,
+    activeIndex: 1,
   },
 
   //  ╦  ╦╔═╗╔═╗╔═╗╦ ╦╔═╗╦  ╔═╗
@@ -74,6 +75,15 @@ parasails.registerPage('homepage', {
   //  ╩╝╚╝ ╩ ╚═╝╩╚═╩ ╩╚═╝ ╩ ╩╚═╝╝╚╝╚═╝
   methods: {
 
+    clickToActive: function(x) {
+      console.log("click" + x);
+
+      this.activeIndex = x;
+      console.log("this.activeIndex");
+      console.log(this.activeIndex);
+
+    },
+
     onChange: function(event) {
 
 
@@ -93,7 +103,7 @@ parasails.registerPage('homepage', {
           this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
         }
         this.valueOfRange = event.target.value;
-        
+
       } else {
         this.valueOfRange = event.target.value;
       }
