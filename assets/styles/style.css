@@ -310,7 +310,7 @@ input#flexRadioDefault3 {
 
 .halfCircle {
   background-color: #f6f0e8;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
   border-radius: 50% 50% 0 0/100% 100% 0 0;
 }
 
