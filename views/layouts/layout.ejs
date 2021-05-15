@@ -7,7 +7,7 @@
 <html>
 
 <head>
-  <title>sharroobo</title>
+  <title>intifaac</title>
 
   <% /* Viewport tag for sensible mobile support */ %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,6 +37,7 @@
         by the asset pipeline between "STYLES" and "STYLES END", or both.
         (https://sailsjs.com/docs/concepts/assets/task-automation)
     */ %>
+  <link href="/images/logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
   <% /* Auto-injected «link» tags: */ %>
   <!--STYLES-->
@@ -44,14 +45,13 @@
   <link rel="stylesheet" href="/dependencies/fontawesome.css">
   <link rel="stylesheet" href="/styles/carousel.css">
   <link rel="stylesheet" href="/styles/importer.css">
-  <link rel="stylesheet" href="/styles/pages/5animate.css">
   <link rel="stylesheet" href="/styles/pages/animate.css">
   <link rel="stylesheet" href="/styles/responsive.css">
   <link rel="stylesheet" href="/styles/style.css">
   <!--STYLES END-->
 
   <link rel="stylesheet" href="/owl.carousel.min.css" />
-<link rel="stylesheet" href="/swiper.min.css" />
+  <link rel="stylesheet" href="/swiper.min.css" />
 
 </head>
 
@@ -64,7 +64,6 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
             <img src="/images/logo.png" alt="cpd_logo " class="img-fluid logo" width=" ">
-            <!-- <span class="text-white">CPD for Teachers</span> -->
           </a>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar top-bar"></span>
@@ -79,13 +78,13 @@
                 <a class="nav-link" href="/">Comment ça marche ?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/aboutus">Témoignages</a>
+                <a class="nav-link " href="/">Témoignages</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link text-white" href="/venue-dates">Mon compte&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="nav-link login" id="loginScroll" href="/">Mon compte&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
               </li>
             </ul>
 
@@ -116,7 +115,7 @@
       <div class="container-fluid footer">
         <div class="row">
           <div class="col-lg-2 col-md-3 col-sm-12">
-            <img src="/images/logo-footer.svg" class="img-fluid pb-3 footer" width-"150px" alt="CPDforteachers-logo">
+            <img src="/images/whiteLogo.png" class="img-fluid pb-3 footer" width-"150px" alt="CPDforteachers-logo">
             <p><a href="mailto:info@cpdforteachers.com">Suivez nous</a></p>
             <i class="fa fa-twitter text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
             <i class="fa fa-facebook text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
@@ -211,84 +210,97 @@
     <div id="footer" class="d-block d-sm-none d-none d-md-block d-lg-none">
       <div class="container footer">
         <div class="row">
-          <div class="col-lg-2 col-md-3 col-sm-12">
-            <img src="/images/logo-footer.svg" class="img-fluid pb-3 footer" width-"150px" alt="CPDforteachers-logo">
+          <div class="col-lg-2 col-md-3 col-sm-12 text-center" style="padding-bottom:30px">
+            <img src="/images/whiteLogo.png" class="img-fluid pb-3 footer ml-auto mr-auto" width-"150px" alt="logo">
             <p><a href="mailto:info@cpdforteachers.com">Suivez nous</a></p>
             <i class="fa fa-twitter text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
             <i class="fa fa-facebook text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
             <i class="fa fa-linkedin text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
             <i class="fa fa-youtube-play text-white" style="font-size: 20px;" aria-hidden="true"></i>
           </div>
-          <div class="col-lg-2 col-md-2 col-sm-12">
-            <div class="footer-links">
-              <p class="footer"><a href="/"><b>Emprunter</b></a></p>
-              <p class="footer"><a href="/">Crédit consommation</a></p>
-              <p class="footer"><a href="/s">Prêt personnel</a></p>
-              <p class="footer"><a href="/">TERMS</a></p>
-              <p class="footer"><a href="/y">Prêt entre particuliers</a></p>
+
+
+          <div class="row">
+            <div class="col-6">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Emprunter</b></a></p>
+                <p class="footer"><a href="/">Crédit consommation</a></p>
+                <p class="footer"><a href="/s">Prêt personnel</a></p>
+                <p class="footer"><a href="/">TERMS</a></p>
+                <p class="footer"><a href="/y">Prêt entre particuliers</a></p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Micro crédit</b></a></p>
+                <p class="footer"><a href="/">Crédit facile</a></p>
+                <p class="footer"><a href="/">Crédit rapide</a></p>
+                <p class="footer"><a href="/terms">Crédit sans justificatif</a></p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-2 col-sm-12">
-            <div class="footer-links">
-              <p class="footer"><a href="/"><b>Micro crédit</b></a></p>
-              <p class="footer"><a href="/">Crédit facile</a></p>
-              <p class="footer"><a href="/">Crédit rapide</a></p>
-              <p class="footer"><a href="/terms">Crédit sans justificatif</a></p>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Plus sur Finfrog</b></a></p>
+                <p class="footer"><a href="/">Notre mission</a></p>
+                <p class="footer"><a href="/">PresseS</a></p>
+                <p class="footer"><a href="/">Nous rejoindre</a></p>
+                <p class="footer"><a href="/">Blog</a></p>
+                <p class="footer"><a href="/">Publications</a></p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Informations règlementaires</b></a></p>
+                <p class="footer"><a href="/">Statistiques</a></p>
+                <p class="footer"><a href="/">CGU Mangopay</a></p>
+                <p class="footer"><a href="/">CGU finfrog</a></p>
+                <p class="footer"><a href="/">Données personnelles</a></p>
+                <p class="footer"><a href="/">Informations réglementaires</a></p>
+                <p class="footer"><a href="/">Sécurité</a></p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-2 col-sm-12">
-            <div class="footer-links">
-              <p class="footer"><a href="/"><b>Plus sur Finfrog</b></a></p>
-              <p class="footer"><a href="/">Notre mission</a></p>
-              <p class="footer"><a href="/">PresseS</a></p>
-              <p class="footer"><a href="/">Nous rejoindre</a></p>
-              <p class="footer"><a href="/">Blog</a></p>
-              <p class="footer"><a href="/">Publications</a></p>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Guide du crédit</b></a></p>
+                <p class="footer"><a href="/">Rachat de crédit</a></p>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Guide du budget</b></a></p>
+                <p class="footer"><a href="/">Découvert bancaire</a></p>
+                <p class="footer"><a href="/">Paiement en plusieurs fois</a></p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-3 col-sm-12 ">
-            <div class="footer-links">
-              <p class="footer"><a href="/"><b>Informations règlementaires</b></a></p>
-              <p class="footer"><a href="/">Statistiques</a></p>
-              <p class="footer"><a href="/">CGU Mangopay</a></p>
-              <p class="footer"><a href="/">CGU finfrog</a></p>
-              <p class="footer"><a href="/">Données personnelles</a></p>
-              <p class="footer"><a href="/">Informations réglementaires</a></p>
-              <p class="footer"><a href="/">Sécurité</a></p>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Aller plus loin avec Finfrog</b></a></p>
+                <p class="footer"><a href="/">Devenir prêteur</a></p>
+                <p class="footer"><a href="/">Projets à financer</a></p>
+                <p class="footer"><a href="/">Nous rejoindre</a></p>
+                <p class="footer"><a href="/">Finfrog PRO</a></p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2 col-md-3 col-sm-12">
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-12">
-            <div class="footer-links">
-              <p class="footer"><a href="/"><b>Guide du crédit</b></a></p>
-              <p class="footer"><a href="/">Rachat de crédit</a></p>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-12">
-            <div class="footer-links">
-              <p class="footer"><a href="/"><b>Guide du budget</b></a></p>
-              <p class="footer"><a href="/">Découvert bancaire</a></p>
-              <p class="footer"><a href="/">Paiement en plusieurs fois</a></p>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-12">
-            <div class="footer-links">
-              <p class="footer"><a href="/"><b>Aller plus loin avec Finfrog</b></a></p>
-              <p class="footer"><a href="/">Devenir prêteur</a></p>
-              <p class="footer"><a href="/">Projets à financer</a></p>
-              <p class="footer"><a href="/">Nous rejoindre</a></p>
-              <p class="footer"><a href="/">Finfrog PRO</a></p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-3 col-sm-12 ">
-            <div class="footer-links">
-              <p class="footer"><a href="/"><b>Support</b></a></p>
-              <p class="footer"><a href="/">Nous contacter</a></p>
-              <p class="footer"><a href="/">FAQ</a></p>
-              <p class="footer"><a href="/">Lexique</a></p>
+
+            <div class="col-6">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Support</b></a></p>
+                <p class="footer"><a href="/">Nous contacter</a></p>
+                <p class="footer"><a href="/">FAQ</a></p>
+                <p class="footer"><a href="/">Lexique</a></p>
+              </div>
             </div>
           </div>
 
@@ -323,14 +335,20 @@
 
   <script type="text/javascript">
     var myNav = document.getElementById("nav");
+    var login = document.getElementById("loginScroll");
 
     window.onscroll = function() {
       console.log("hits");
       "use strict";
       if (document.body.scrollTop >= 10 || document.documentElement.scrollTop >= 10) {
         myNav.classList.add("scroll");
+        login.classList.add("chnageClr");
+        myNav.classList.remove("chnageClrWhite");
+
       } else {
         myNav.classList.remove("scroll");
+        login.classList.remove("chnageClr");
+        // login.classList.add("chnageClrWhite");
       }
     };
   </script>

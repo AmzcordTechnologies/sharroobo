@@ -4,6 +4,9 @@ parasails.registerPage('homepage', {
   //  ╩╝╚╝╩ ╩ ╩╩ ╩╩═╝  ╚═╝ ╩ ╩ ╩ ╩ ╚═╝
   data: {
     slideIndex: '1',
+    valueOfRange: '300',
+    totalVatRange: '0',
+    month: 3,
   },
 
   //  ╦  ╦╔═╗╔═╗╔═╗╦ ╦╔═╗╦  ╔═╗
@@ -70,6 +73,54 @@ parasails.registerPage('homepage', {
   //  ║║║║ ║ ║╣ ╠╦╝╠═╣║   ║ ║║ ║║║║╚═╗
   //  ╩╝╚╝ ╩ ╚═╝╩╚═╩ ╩╚═╝ ╩ ╩╚═╝╝╚╝╚═╝
   methods: {
+
+    onChange: function(event) {
+
+
+      if (this.month > 0) {
+        if (this.month == 3) {
+          var value = (event.target.value / 100) * 3.89;
+          this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+        }
+
+        if (this.month == 4) {
+          var value = (event.target.value / 100) * 4.71;
+          this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+        }
+
+        if (this.month == 5) {
+          var value = (event.target.value / 100) * 6.31;
+          this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+        }
+        this.valueOfRange = event.target.value;
+        
+      } else {
+        this.valueOfRange = event.target.value;
+      }
+
+    },
+
+    calculateVat: function(x) {
+      console.log("x");
+      console.log(x);
+      this.month = x;
+
+      if (x == '3') {
+        var value = (this.valueOfRange / 100) * 3.89;
+        this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+      }
+
+      if (x == '4') {
+        var value = (this.valueOfRange / 100) * 4.71;
+        this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+      }
+
+      if (x == '5') {
+        var value = (this.valueOfRange / 100) * 6.31;
+        this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+      }
+
+    },
 
     clickHeroButton: async function() {
       // Scroll to the 'get started' section:

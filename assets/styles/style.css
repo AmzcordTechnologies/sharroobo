@@ -151,7 +151,7 @@ b {
 }
 
 b.responsable {
-  color: #4d50f4;
+  color: #9381ff;
 }
 
 button.btn.btn-primary {
@@ -159,8 +159,8 @@ button.btn.btn-primary {
   width: 250px;
   height: 70px;
   border-radius: 13px;
-  background-color: #4d50f4;
-  border: 1px solid #4d50f4;
+  background-color: #9381ff;
+  border: 1px solid #9381ff;
   font-weight: bold;
   font-size: 25px;
 }
@@ -234,13 +234,13 @@ input[type="range"]::-webkit-slider-thumb {
   width: 35px;
   height: 35px;
   border-radius: 40px;
-  background-color: #4d50f4;
-  border: 1px solid #4d50f4;
+  background-color: #9381ff;
+  border: 1px solid #9381ff;
 }
 
 input[type="range"] {
   -webkit-appearance: none;
-  background-color: #4d50f4d1;
+  background-color: #9381ff;
   height: 10px;
   border-radius: 10px;
   width: 400px;
@@ -263,13 +263,13 @@ input[type="range"] {
 }
 
 output#rangevalue1 {
-  color: #4d50f4;
+  color: #9381ff;
   font-weight: 700;
   font-size: 25px;
 }
 
 label.sign {
-  color: #4d50f4;
+  color: #9381ff;
   font-weight: 700;
   font-size: 25px;
 }
@@ -279,7 +279,7 @@ label.sign {
 }
 
 .col-2.radioTest {
-  color: #4d50f4;
+  color: #9381ff;
   font-weight: 700;
   font-size: 17px;
   text-align: left;
@@ -320,7 +320,7 @@ input#flexRadioDefault3 {
 
 label.price {
   font-weight: bold;
-  color: #4d50f4;
+  color: #9381ff;
 }
 
 .col-6.avarageCol {
@@ -425,8 +425,8 @@ button.btn.btn-primary {
   width: 200px;
   height: 50px;
   border-radius: 13px;
-  background-color: #4d50f4;
-  border: 1px solid #4d50f4;
+  background-color: #9381ff;
+  border: 1px solid #9381ff;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -445,7 +445,7 @@ button.btn.btn-primary {
 }
 
 .bluetxt {
-  color: #4d50f4;
+  color: #9381ff;
 }
 
 .test {
@@ -590,7 +590,7 @@ button.btn.btn-primary {
 
 .carousel-indicators.iphonecarousel li.active {
   margin-bottom: 10px;
-  background: #4d50f4;
+  background: #284776;
   width: 120px;
   height: 8px;
   border-radius: 10px;
@@ -658,7 +658,7 @@ span.disableTxt {
 }
 
 .carousel-indicators .active {
-  background-color: #4d50f4;
+  background-color: #284776;
   width: 100px;
 }
 
@@ -668,11 +668,11 @@ li.iphoneMobileview {
 
 img.d-block.iphoneMobileview {
   height: 350px;
-  padding-left: 90px;
+  padding-left: 75px;
 }
 
 p.headl.iphoneMobileview {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 p.headl.Slider.iphoneMobileview {
@@ -685,19 +685,19 @@ p.headl.Slider.iphoneMobileview {
 }
 
 span.disableTxt.iphoneMobileview2 {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 span.disableTxt.iphoneMobileview3 {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 span.bluetxt.iphoneMobileview2 {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 span.bluetxt.iphoneMobileview3 {
-  padding-left: 60px;
+  padding-left: 40px;
 }
 
 /* CHATHTHA  */
@@ -779,9 +779,55 @@ p.text1.responsive {
 }
 
 .col-md-6.responsiveimagesthree.d-block.d-sm-none {
-  padding-left: 85px;
+  padding-left: 70px;
 }
 
 img.logoimage3 {
-    height: 80px;
+  height: 80px;
+}
+
+.changeClr {
+  color: #343a40 !important;
+}
+
+.changeClrWhite {
+  color: white !important;
+}
+
+img.gogleplay {
+  height: 70px;
+  max-height: 70px;
+}
+
+a#loginScroll {
+  color: white !important;
+}
+
+#loginScroll.chnageClr {
+  color: #343a40 !important;
+}
+
+.block--new.price {
+  padding-bottom: 0px;
+}
+
+img.price {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex.justify-content-center {
+  padding-bottom: 30px;
+}
+
+.footer-links.mobile {
+  font-size: 12px;
+}
+
+p.text1.responsive.d-xl-none.d-block.d-sm-none {
+  padding-left: 12px;
+  text-align: left;
+  font-size: 14px;
+  /* font-weight: bold; */
 }
