@@ -822,7 +822,8 @@ img.price {
 }
 
 .footer-links.mobile {
-  font-size: 12px;
+  font-size: 12px;text-align: center;
+
 }
 
 p.text1.responsive.d-xl-none.d-block.d-sm-none {
