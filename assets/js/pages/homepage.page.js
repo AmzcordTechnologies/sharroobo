@@ -16,6 +16,8 @@ parasails.registerPage('homepage', {
   mounted: async function() {
     this._setHeroHeight();
 
+    new WOW().init();
+
     var range = document.getElementById('g-range-value');
 
     $(document).ready(function() {

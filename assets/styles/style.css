@@ -717,7 +717,7 @@ span.bluetxt.iphoneMobileview3 {
 
 .logobackground {
   background-image: url("/images/Logobackground-01.jpg");
-  height: 900px;
+  /* height: 900px; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -779,5 +779,9 @@ p.text1.responsive {
 }
 
 .col-md-6.responsiveimagesthree.d-block.d-sm-none {
-  padding-left: 75px;
+  padding-left: 85px;
+}
+
+img.logoimage3 {
+    height: 80px;
 }
