@@ -275,7 +275,11 @@ label.sign {
 }
 
 .row.radio-buttons {
-  margin-right: 200px;
+  /* margin-right: 200px; */
+}
+
+.row.radio-buttons {
+  max-width: 75%;
 }
 
 .col-2.radioTest {
@@ -709,14 +713,12 @@ span.bluetxt.iphoneMobileview3 {
   background-color: #9381ff;
 }
 
-
-
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 15px;
-    /* padding-bottom: 10px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  /* padding-bottom: 10px; */
 }
 
 .logobackground {

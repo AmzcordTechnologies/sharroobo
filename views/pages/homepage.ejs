@@ -2,7 +2,7 @@
 
   <div class="cover">
     <div class="row coverRow">
-      <div class="ml-auto col-md-6 coverleft d-none d-xl-block">
+      <div class="ml-auto col-md-6 coverleft d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
         <div class="container-fluid">
           <div class="caption">
             <div class="laondingpageTest">
@@ -10,8 +10,6 @@
                 <p class="headl mt-5 mb-1 wow bounceInLeft">Le micro-crédit simple,<br>
                   rapide, <b class="responsable">responsable.</b></h1><br>
                 </p>
-                <!-- <h1>Le micro-crédit simple,<br>
-                  rapide, <b class="responsable">responsable.</b></h1><br> -->
                 <small>
                   <p class="wow bounceInLeft">
                     Votre prêt en 24h, jusqu’à 600 euros.<br>
@@ -38,41 +36,44 @@
             </div><br>
             <div class="float-left">
               <label class="priceRange">100€</label>&nbsp;&nbsp;<input class="range" type="range" min="100" max="600" value="100£" step="1" @change="onChange($event)" />&nbsp;&nbsp;<label class="priceRange">600€</label>
-            </div>
-            <br><br>
-            <!-- <br><br> -->
-            <div class="row radio-buttons">
-              <div class="col-2 radio">
-                <!-- <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked> -->
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" @click="calculateVat(3)">
-              </div>
-              <div class="col-2 radioTest">
-                3 mois
-              </div>
-              <div class="col-2 radio">
-                <!-- <input type="radio" id="customRadioInline2" name="customRadioInline2" class="form-control"> -->
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" @click="calculateVat(4)">
-              </div>
-              <div class="col-2 radioTest">
-                4 mois
-              </div>
-              <div class="col-2 radio">
-                <!-- <input type="radio" id="customRadioInline3" name="customRadioInline3" class="form-control"> -->
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" @click="calculateVat(5)">
-              </div>
-              <div class="col-2 radioTest">
-                5 mois
-              </div>
               <br><br>
-              <br>
-              <div class="row">
-                <div class="col-6 avarageCol">
+              <!-- <br><br> -->
+              <div class="row radio-buttons">
+                <div class="col-1 radio">
+                  <!-- <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked> -->
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" @click="calculateVat(3)">
                 </div>
-                <div class="col-6 avarageCol">
-                  Mensualité: <label class="price">{{totalVatRange}}€/mois</label>
+                <div class="col-3 radioTest pt-2">
+                  3 mois
+                </div>
+                <div class="col-1 radio">
+                  <!-- <input type="radio" id="customRadioInline2" name="customRadioInline2" class="form-control"> -->
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" @click="calculateVat(4)">
+                </div>
+                <div class="col-3 radioTest pt-2">
+                  4 mois
+                </div>
+                <div class="col-1 radio">
+                  <!-- <input type="radio" id="customRadioInline3" name="customRadioInline3" class="form-control"> -->
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" @click="calculateVat(5)">
+                </div>
+                <div class="col-3 radioTest pt-2">
+                  5 mois
+                </div>
+                <br><br>
+                <br>
+                <div class="row">
+                  <div class="col-6 avarageCol">
+                  </div>
+                  <div class="col-6 avarageCol">
+                    Mensualité: <label class="price">{{totalVatRange}}€/mois</label>
+                  </div>
                 </div>
               </div>
             </div>
+
+
+
           </div>
         </div>
       </div>
@@ -107,20 +108,21 @@
             </div><br>
             <div class="float-left">
               <label class="priceRange">100€</label>&nbsp;<input style="width: 200px;" class="range" type="range" min="100" max="600" value="100£" step="1" @change="onChange($event)" />&nbsp;<label class="priceRange">600€</label>
+              <div class="row col-12 ml-auto mr-auto">
+                <div class="col-4">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" @click="calculateVat(3)">3 mois
+                </div>
+                <div class="col-4">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" @click="calculateVat(4)">4 mois
+                </div>
+                <div class="col-4">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" @click="calculateVat(5)">5 mois
+                </div>
+              </div>
             </div>
             <br><br>
           </div>
-          <div class="row col-12 ml-auto mr-auto">
-            <div class="col-4">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" @click="calculateVat(3)">3 mois
-            </div>
-            <div class="col-4">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" @click="calculateVat(4)">4 mois
-            </div>
-            <div class="col-4">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" @click="calculateVat(5)">5 mois
-            </div>
-          </div>
+
           <br>
           <div class="row">
             <div class="col-12 avarageCol text-right">
@@ -132,7 +134,7 @@
         </div>
       </div>
 
-      <div class="mr-auto col-sm-6 d-none d-sm-block d-md-none d-lg-block wow fadeInRight" style="background:url(../images/HeroImagenew.png);background-size:cover; height: 1080px;">
+      <div class="mr-auto col-sm-6 d-none d-xl-block wow fadeInRight d-none d-lg-block d-xl-none d-none" style="background:url(../images/HeroImagenew.png);background-size:cover; height: 1080px;">
       </div>
     </div>
   </div>
@@ -1266,22 +1268,27 @@
             <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <a class="nav-link mb-4 p-3 tabdesign active" id="v-pills-Alternative-tab" data-toggle="pill" href="#v-pills-Alternative" role="tab" aria-controls="v-pills-home" aria-selected="true">
                 <!-- <i class="fa fa-user-circle-o mr-2"></i> -->
-                <span class="font-weight-bold small text-uppercase">Alternative aux banques</span></a>
+                <span class="font-weight-bold small text-uppercase">Alternative aux banques</span>
+              </a>
 
               <a class="nav-link mb-4 p-3 tabdesign" id="v-pills-Ouvert-tab" data-toggle="pill" href="#v-pills-Ouvert" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                 <!-- <i class="fa fa-calendar-minus-o mr-2"></i> -->
-                <span class="font-weight-bold small text-uppercase">Ouvert au plus grand nombre</span></a>
+                <span class="font-weight-bold small text-uppercase">Ouvert au plus grand nombre</span>
+              </a>
 
               <a class="nav-link mb-4 p-3 tabdesign" id="v-pills-Des-tab" data-toggle="pill" href="#v-pills-Des" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                 <!-- <i class="fa fa-star mr-2"></i> -->
-                <span class="font-weight-bold small text-uppercase">Des tarifs clairs et sans surprises</span></a>
+                <span class="font-weight-bold small text-uppercase">Des tarifs clairs et sans surprises</span>
+              </a>
 
               <a class="nav-link mb-4 p-3 tabdesign" id="v-pills-Responsable-tab" data-toggle="pill" href="#v-pills-Responsable" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                 <!-- <i class="fa fa-check mr-2"></i> -->
-                <span class="font-weight-bold small text-uppercase">Responsable et engagé</span></a>
+                <span class="font-weight-bold small text-uppercase">Responsable et engagé</span>
+              </a>
               <a class="nav-link mb-4 p-3 tabdesign" id="v-pills-Unservice-tab" data-toggle="pill" href="#v-pills-Unservice" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                 <!-- <i class="fa fa-check mr-2"></i> -->
-                <span class="font-weight-bold small text-uppercase">Un service client à votre écoute</span></a>
+                <span class="font-weight-bold small text-uppercase">Un service client à votre écoute</span>
+              </a>
             </div>
 
           </div>
