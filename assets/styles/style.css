@@ -98,7 +98,7 @@ li.nav-item {
 }
 
 div#footer {
-  background-color: #9381ff;
+  background-color: #f7b585;
   padding: 50px 40px 10px 40px;
 }
 
@@ -151,7 +151,7 @@ b {
 }
 
 b.responsable {
-  color: #9381ff;
+  color: #f7b585;
 }
 
 button.btn.btn-primary {
@@ -159,8 +159,8 @@ button.btn.btn-primary {
   width: 250px;
   height: 70px;
   border-radius: 13px;
-  background-color: #9381ff;
-  border: 1px solid #9381ff;
+  background-color: #f7b585;
+  border: 1px solid #f7b585;
   font-weight: bold;
   font-size: 25px;
 }
@@ -234,13 +234,13 @@ input[type="range"]::-webkit-slider-thumb {
   width: 35px;
   height: 35px;
   border-radius: 40px;
-  background-color: #9381ff;
-  border: 1px solid #9381ff;
+  background-color: #f7b585;
+  border: 1px solid #f7b585;
 }
 
 input[type="range"] {
   -webkit-appearance: none;
-  background-color: #9381ff;
+  background-color: #f7b585;
   height: 10px;
   border-radius: 10px;
   width: 400px;
@@ -263,13 +263,13 @@ input[type="range"] {
 }
 
 output#rangevalue1 {
-  color: #9381ff;
+  color: #f7b585;
   font-weight: 700;
   font-size: 25px;
 }
 
 label.sign {
-  color: #9381ff;
+  color: #f7b585;
   font-weight: 700;
   font-size: 25px;
 }
@@ -283,7 +283,7 @@ label.sign {
 }
 
 .col-2.radioTest {
-  color: #9381ff;
+  color: #f7b585;
   font-weight: 700;
   font-size: 17px;
   text-align: left;
@@ -324,7 +324,7 @@ input#flexRadioDefault3 {
 
 label.price {
   font-weight: bold;
-  color: #9381ff;
+  color: #f7b585;
 }
 
 .col-6.avarageCol {
@@ -429,8 +429,8 @@ button.btn.btn-primary {
   width: 200px;
   height: 50px;
   border-radius: 13px;
-  background-color: #9381ff;
-  border: 1px solid #9381ff;
+  background-color: #f7b585;
+  border: 1px solid #f7b585;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -449,7 +449,7 @@ button.btn.btn-primary {
 }
 
 .bluetxt {
-  color: #9381ff;
+  color: #f7b585;
 }
 
 .test {
@@ -587,8 +587,8 @@ button.btn.btn-primary {
 .carousel-indicators.iphonecarousel li {
   display: block;
   margin-bottom: 100px;
-  border: 1px solid #9381ff96;
-  background-color: #9381ff96;
+  border: 1px solid #f7b58596;
+  background-color: #f7b58596;
   height: 3px;
 }
 
@@ -611,7 +611,7 @@ img.slideImg {
 }
 
 ol.carousel-indicators.iphonecarousel {
-  background-color: #9381ff;
+  background-color: #f7b585;
   max-width: 200px;
   height: 8px !important;
   border-radius: 50px;
@@ -710,7 +710,7 @@ span.bluetxt.iphoneMobileview3 {
 }
 
 .appmobile {
-  background-color: #9381ff;
+  background-color: #f7b585;
 }
 
 .center {
@@ -737,7 +737,7 @@ span.bluetxt.iphoneMobileview3 {
 }
 
 .logoimage2 {
-  height: 120px;
+  height: 110px;
   padding: 30px;
 }
 
@@ -888,7 +888,7 @@ p.text1.responsive.d-xl-none.d-block.d-sm-none {
   font-size: 25px;
   font-weight: 800;
   line-height: 1.25;
-  color: #9381ff;
+  color: #f7b585;
 }
 
 input.typo {
@@ -976,27 +976,27 @@ input:checked~.tab-content2 {
 }
 
 a#v-pills-Alternative-tab.active {
-  background-color: #9381ff !important;
+  background-color: #f7b585 !important;
   color: white !important;
 }
 
 a#v-pills-Ouvert-tab.active {
-  background-color: #9381ff !important;
+  background-color: #f7b585 !important;
   color: white !important;
 }
 
 a#v-pills-Des-tab.active {
-  background-color: #9381ff !important;
+  background-color: #f7b585 !important;
   color: white !important;
 }
 
 a#v-pills-Responsable-tab.active {
-  background-color: #9381ff !important;
+  background-color: #f7b585 !important;
   color: white !important;
 }
 
 a#v-pills-Unservice-tab.active {
-  background-color: #9381ff !important;
+  background-color: #f7b585 !important;
   color: white !important;
 }
 

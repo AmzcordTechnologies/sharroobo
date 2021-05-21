@@ -7,12 +7,12 @@
           <div class="caption">
             <div class="laondingpageTest">
               <div class="">
-                <p class="headl mt-5 mb-1 wow bounceInLeft">Le micro-crédit simple,<br>
-                  rapide, <b class="responsable">responsable.</b></h1><br>
+                <p class="headl mt-5 mb-1 wow bounceInLeft">Microcrédit facile, agile e<br>
+                  <b class="responsable">complet.</b></h1><br>
                 </p>
                 <small>
                   <p class="wow bounceInLeft">
-                    Votre prêt en 24h, jusqu’à 600 euros.<br>
+                    Votre prêt en 24h, jusqu’à 500 euros.<br>
                     10 fois moins cher qu’un découvert.
                   </p>
 
@@ -32,10 +32,10 @@
           </div>
           <div class="container progressbar">
             <div class="value">
-              <label class="sign">{{valueOfRange}}€</label>
+              <label class="sign">{{valueOfRange}}Fdj</label>
             </div><br>
             <div class="float-left">
-              <label class="priceRange">100€</label>&nbsp;&nbsp;<input class="range" type="range" min="100" max="600" value="100£" step="1" @change="onChange($event)" />&nbsp;&nbsp;<label class="priceRange">600€</label>
+              <label class="priceRange">100Fdj</label>&nbsp;&nbsp;<input class="range" type="range" min="100" max="500" value="" @change="onChange($event)" v-model="valueOfRange" />&nbsp;&nbsp;<label class="priceRange">500Fdj</label>
               <br><br>
               <!-- <br><br> -->
               <div class="row radio-buttons">
@@ -44,21 +44,21 @@
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" @click="calculateVat(3)">
                 </div>
                 <div class="col-3 radioTest pt-2">
-                  3 mois
+                  30 days
                 </div>
                 <div class="col-1 radio">
                   <!-- <input type="radio" id="customRadioInline2" name="customRadioInline2" class="form-control"> -->
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" @click="calculateVat(4)">
                 </div>
                 <div class="col-3 radioTest pt-2">
-                  4 mois
+                  60 days
                 </div>
                 <div class="col-1 radio">
                   <!-- <input type="radio" id="customRadioInline3" name="customRadioInline3" class="form-control"> -->
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" @click="calculateVat(5)">
                 </div>
                 <div class="col-3 radioTest pt-2">
-                  5 mois
+                  90 days
                 </div>
                 <br><br>
                 <br>
@@ -66,7 +66,7 @@
                   <div class="col-6 avarageCol">
                   </div>
                   <div class="col-6 avarageCol">
-                    Mensualité: <label class="price">{{totalVatRange}}€/mois</label>
+                    Mensualité: <label class="price">{{totalVatRange}}Fdj/mois</label>
                   </div>
                 </div>
               </div>
@@ -84,11 +84,12 @@
           <div class="caption">
             <div class="laondingpageTest">
               <div class="">
-                <p class="headl iphoneMobileview wow bounceInLeft">Le micro-crédit simple,<br>
-                  rapide, <b class="responsable">responsable.</b></p><br>
+                <p class="headl iphoneMobileview wow bounceInLeft">Microcrédit facile, agile et<br>
+                  <b class="responsable">complet.</b>
+                </p><br>
                 <small>
                   <p class="wow bounceInLeft">
-                    Votre prêt en 24h, jusqu’à 600 euros.<br>
+                    Votre prêt en 24h, jusqu’à 500 euros.<br>
                     10 fois moins cher qu’un découvert.
                   </p>
                   <br>
@@ -142,10 +143,18 @@
   <div class="block--new container-fluid">
     <div class="row">
       <div class="col-md-8">
-        <p class="headl mt-5 mb-1 d-none d-xl-block wow bounceInLeft">Pourquoi nos<span class="bluetxt"> 100,000 </span> </br> clients nous recommandent ?
+        <p class="headl mt-5 mb-1 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none wow bounceInLeft">Pourquoi nos clients nous<span class="bluetxt"> préfèrent-ils?</span>
+          <br>
         </p>
-        <p class="headl iphoneMobileview mt-5 mb-1 d-block d-sm-none d-none d-md-block d-lg-none wow bounceInLeft">Pourquoi nos<span class="bluetxt"> 100,000 </span> clients nous recommandent ?
+        <p class="wow bounceInLeft text1 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
+          <b>Parce que nous visons à alléger votre fardeau.</b>
         </p>
+
+        <p class="headl iphoneMobileview mt-5 mb-1 d-block d-sm-none d-none d-md-block d-lg-none wow bounceInLeft">Pourquoi nos clients nous<span class="bluetxt"> préfèrent-ils? </span>
+          <br>
+          <small> <b>Parce que nous visons à alléger votre fardeau</b></small>.
+        </p>
+
       </div>
       <div class="col-md-4">
         <div class="AvisVerifiesInline__stars__icon icon mt-5">
@@ -189,9 +198,9 @@
             <img src="/images/eclair.svg" width="160px">
           </div>
           <div class="col">
-            <p class="head2 mt-3">Simple</p>
-            <p class="text1 d-none d-xl-block">Demande en ligne en 5 min. </br>Sans justificatif. </p>
-            <p class="text1 responsive d-xl-none d-block d-sm-none">Demande en ligne en 5 min. </br>Sans justificatif. </p>
+            <p class="head2 mt-3">Facile</p>
+            <p class="text1 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">Postulez en ligne sans exigences <br>réglementaires. </p>
+            <p class="text1 responsive d-xl-none d-block d-sm-none">Postulez en ligne sans exigences <br>réglementaires. </p>
           </div>
         </div>
       </div>
@@ -201,9 +210,9 @@
             <img src="/images/argent.svg" width="160px">
           </div>
           <div class="col">
-            <p class="head2 mt-3">Rapide</p>
-            <p class="text1 d-none d-xl-block">Obtenez une réponse en moins de 24h </br>ouvrées. </p>
-            <p class="text1 responsive d-xl-none d-block d-sm-none">Obtenez une réponse en moins de 24h </br>ouvrées. </p>
+            <p class="head2 mt-3">Agile</p>
+            <p class="text1 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">Très réactif pour obtenir une <br>réponse en peu de temps. </p>
+            <p class="text1 responsive d-xl-none d-block d-sm-none">Très réactif pour obtenir une <br>réponse en peu de temps. </p>
           </div>
         </div>
       </div>
@@ -213,9 +222,13 @@
             <img src="/images/doigt.svg" width="160px">
           </div>
           <div class="col">
-            <p class="head2 mt-3">Simple</p>
-            <p class="text1 d-none d-xl-block">Tarif transparent, sans surprise. </br>10X moins cher qu’un découvert. </p>
-            <p class="text1 responsive d-xl-none d-block d-sm-none">Tarif transparent, sans surprise. </br>10X moins cher qu’un découvert. </p>
+            <p class="head2 mt-3">Complète</p>
+            <p class="text1 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">Taux monétaire explicite; pas de frais cachés.
+              <br>Peu coûteux que les frais bancaires de découvert.
+            </p>
+            <p class="text1 responsive d-xl-none d-block d-sm-none">Taux monétaire explicite; pas de frais cachés.
+              <br>Peu coûteux que les frais bancaires de découvert.
+            </p>
           </div>
         </div>
       </div>
@@ -227,7 +240,6 @@
   <div class="block--new ballonsec">
     <div class="row ">
       <div class="col-lg-1">
-
       </div>
       <div class="col-lg">
         <img src="/images/airBalloon.png" alt="" class="Balloon__image">
@@ -235,9 +247,10 @@
 
       <div class="col-lg">
         <div class="balloncontent">
-          <p class="headl wow bounceInRight d-none d-xl-block">Le micro-crédit </br> qui voit grand. </p>
-          <p class="headl iphoneMobileview wow bounceInRight d-xl-none d-block d-sm-none">Le micro-crédit </br> qui voit grand. </p>
-          <p class="text1 mt-3 w-75 wow bounceInRight">Nous pensons que le crédit devrait être à la portée du plus grand nombre. Et qu’être à découvert n’est pas une fatalité.</p>
+          <p class="headl wow bounceInRight d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">Microcrédit avec analyse <br>d'intelligence artificielle. </p>
+          <p class="headl iphoneMobileview wow bounceInRight d-xl-none d-block d-sm-none">Microcrédit avec analyse <br>d'intelligence artificielle. </p>
+          <p class="text1 mt-3 w-75 wow bounceInRight">Nous sommes conscients que la richesse doit être accessible à tous, pas seulement aux riches et aux privilégiés. <br>
+            Nous savons que Life continuera à vous relever un défi. Nous sommes votre outil pour riposter!</p>
           <button type="button" class="btn btn-primary wow fadeIn">J'emprunte&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </div>
       </div>
@@ -248,12 +261,32 @@
 
 
   <div class="block--new price">
-    <p class="headl wow bounceInUp d-none d-xl-block" align="center"><span class="bluetxt">10 fois moins cher </span>que le découvert </p>
-    <p class="text1 wow bounceInUp d-none d-xl-block" align="center">Sur la base d'une étude réalisée auprès de plus de 2500 clients</p>
-    <p class="headl iphoneMobileview wow bounceInUp d-xl-none d-block d-sm-none" align="center"><span class="bluetxt">10 fois moins cher </span>que le découvert </p>
-    <p class="text1 responcive wow bounceInUp d-xl-none d-block d-sm-none" align="center">Sur la base d'une étude réalisée auprès de plus de 2500 clients</p>
+    <p class="headl wow bounceInUp d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none" align="center"><span class="bluetxt"> C'est beaucoup plus avantageux </span>que les frais de découvert bancaire. </p>
+    <div class="container d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
+      <p class="text1 wow bounceInUp" align="center">
+        Basé sur une étude menée par l'agence gouvernementale de protection financière des consommateurs
+        L'étude CFPB des programmes de découvert
+        Le 11 juin 2013, nous avons publié un rapport qui soulève des inquiétudes quant à la capacité des consommateurs à anticiper et à éviter les frais de découvert sur leurs comptes chèques. <br><br>
+        Le rapport a révélé de grandes variations entre les
+        institutions financières en ce qui concerne les coûts et les risques d'opter pour une couverture de découvert. <br><br>
+        Le rapport a également révélé que les consommateurs qui optent pour une couverture de découvert sur les transactions par carte de
+        débit et aux guichets automatiques se retrouvent avec des frais de compte plus élevés et plus de fermetures involontaires de compte que les consommateurs qui ne les acceptent pas.
+      </p>
+    </div>
+
+    <br>
+    <p class="headl iphoneMobileview wow bounceInUp d-xl-none d-block d-sm-none" align="center"><span class="bluetxt"> C'est beaucoup plus avantageux </span>que les frais de découvert bancaire. </p>
+    <p class="text1 responcive wow bounceInUp d-xl-none d-block d-sm-none" align="center">
+      Basé sur une étude menée par l'agence gouvernementale de protection financière des consommateurs
+      L'étude CFPB des programmes de découvert
+      Le 11 juin 2013, nous avons publié un rapport qui soulève des inquiétudes quant à la capacité des consommateurs à anticiper et à éviter les frais de découvert sur leurs comptes chèques. <br>
+      Le rapport a révélé de grandes variations entre les
+      institutions financières en ce qui concerne les coûts et les risques d'opter pour une couverture de découvert. <br>
+      Le rapport a également révélé que les consommateurs qui optent pour une couverture de découvert sur les transactions par carte de
+      débit et aux guichets automatiques se retrouvent avec des frais de compte plus élevés et plus de fermetures involontaires de compte que les consommateurs qui ne les acceptent pas.
+    </p>
     <div class="containe-fluidr">
-      <img src="/images/vsimage.svg" alt="" class="price d-none d-xl-block wow fadeIn">
+      <img src="/images/vsimage.svg" alt="" class="price d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none wow fadeIn">
       <img src="/images/smmobile.svg" alt="" class="d-xl-none d-block d-sm-none wow fadeIn">
       <div class="d-flex justify-content-center">
         <button type="button" class="btn btn-primary wow fadeIn" align="center">En savoir plus&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
@@ -264,7 +297,7 @@
 
 
   <!-- OWL CARASOL Main screen -->
-  <div class="caraoolBackground d-none d-xl-block ">
+  <div class="caraoolBackground d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
     <p class="headl mt-5 mb-1 text-white text-center wow bounceInUp">Les avis de nos clients<br>
     </p>
     <div class="row">
@@ -528,7 +561,6 @@
               </h3>
               <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
                   d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
@@ -559,47 +591,6 @@
 
           <div class="post-slide">
             <div class="post-img">
-              <!-- <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503" alt=""> -->
-              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-            </div>
-            <div class="post-content">
-              <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
-              </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
-              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <!-- <a href="#" class="read-more">read more</a> -->
-              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
-                <path fill="currentColor"
-                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  class=""></path>
-              </svg>
-              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
-                <path fill="currentColor"
-                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  class=""></path>
-              </svg>
-              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
-                <path fill="currentColor"
-                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  class=""></path>
-              </svg>
-              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
-                <path fill="currentColor"
-                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  class=""></path>
-              </svg>
-              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
-                <path fill="currentColor"
-                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-                  class=""></path>
-              </svg>
-            </div>
-          </div>
-
-          <div class="post-slide">
-            <div class="post-img">
-              <!-- <img src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500" alt=""> -->
               <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
             </div>
             <div class="post-content">
@@ -722,7 +713,45 @@
               </h3>
               <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
-              <!-- <a href="#" class="read-more">read more</a> -->
+              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
+                <path fill="currentColor"
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  class=""></path>
+              </svg>
+              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
+                <path fill="currentColor"
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  class=""></path>
+              </svg>
+              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
+                <path fill="currentColor"
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  class=""></path>
+              </svg>
+              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
+                <path fill="currentColor"
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  class=""></path>
+              </svg>
+              <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
+                <path fill="currentColor"
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                  class=""></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="post-slide">
+            <div class="post-img">
+              <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
+
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
                   d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
@@ -998,12 +1027,12 @@
     </div>
   </div>
 
-  <div class="block--new d-none d-xl-block ">
+  <!-- <div class="block--new d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
     <p class="headl wow bounceInLeft" align="center"> Votre demande <span class="bluetxt">en 5 min chrono</span></p>
     <section class="slide-wrapper ">
       <div class="container slider wow bounceInRight">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
+
           <ol class="carousel-indicators iphonecarousel">
             <li data-target="#myCarousel" data-slide-to="0" class="active" style="position:initial">
             <li>
@@ -1013,7 +1042,6 @@
             <li data-target="#myCarousel" data-slide-to="4" style="position:initial"></li>
           </ol>
 
-          <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="fill">
@@ -1047,7 +1075,6 @@
                     <img class="slideImg" src="/images/02-three.png" alt="">
                   </div>
                   <div class="col-2 timeCaseusal1">
-                    <!-- <b>24h</b> -->
                     <div class="carousel1 fist">
                       <b><span class="bluetxt">5 min</span></b>
                     </div>
@@ -1074,9 +1101,7 @@
                   <div class="col-4">
                     <img class="slideImg" src="/images/03-three.png" alt="">
                   </div>
-                  <!-- <div class="col-2 timeCaseusal3"> -->
                   <div class="col-2 timeCaseusal1">
-                    <!-- <b>24h</b> -->
                     <div class="carousel1 fist">
                       <b><span class="disableTxt">5 min</span></b>
                     </div>
@@ -1087,7 +1112,6 @@
                       <b><span class="disableTxt">48h</span></b>
                     </div>
                   </div>
-                  <!-- </div> -->
                   <div class="col-6 slideTest">
                     <p class="headl Slider">Votre demande <span class="bluetxt">en 5 min chrono</span></p> <br>
                     <button type="button" class="btn btn-primary">J’emprunte&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
@@ -1102,7 +1126,6 @@
                     <img class="slideImg" src="/images/04-three.png" alt="">
                   </div>
                   <div class="col-2 timeCaseusal1">
-                    <!-- <b>24h</b> -->
                     <div class="carousel1 fist">
                       <b><span class="disableTxt">5 min</span></b>
                     </div>
@@ -1127,7 +1150,6 @@
                     <img class="slideImg" src="/images/05-three.png" alt="">
                   </div>
                   <div class="col-2 timeCaseusal1">
-                    <!-- <b>24h</b> -->
                     <div class="carousel1 fist">
                       <b><span class="disableTxt">5 min</span></b>
                     </div>
@@ -1152,7 +1174,6 @@
                     <img class="slideImg" src="/images/06-three.png" alt="">
                   </div>
                   <div class="col-2 timeCaseusal1">
-                    <!-- <b>24h</b> -->
                     <div class="carousel1 fist">
                       <b><span class="disableTxt">5 min</span></b>
                     </div>
@@ -1174,20 +1195,18 @@
         </div>
       </div>
     </section>
-  </div>
+  </div> -->
 
   <!-- mobile iphone slider -->
 
-  <div class="block--new container d-xl-none d-block d-sm-none d-none d-md-block d-lg-none">
+  <!-- <div class="block--new container d-xl-none d-block d-sm-none d-none d-md-block d-lg-none">
     <p class="headl iphoneMobileview wow bounceInLeft" align="center"> Votre demande <span class="bluetxt">en 5 min chrono</span></p>
     <div id="carouselExampleIndicators wow bounceInRight" class="carousel slide" data-ride="carousel">
-      <!-- <div class="container indicator"> -->
       <ol class="carousel-indicators iphoneMobileview wow bounceInRight">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="iphoneMobileview active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1" class="iphoneMobileview"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2" class="iphoneMobileview"></li>
       </ol>
-      <!-- </div> -->
       <div class="carousel-inner iphoneMobileview wow bounceInRight">
         <div class="carousel-item active ">
           <img class="d-block iphoneMobileview" src="/images/01-three.png" alt="First slide">
@@ -1244,22 +1263,23 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
+  </div> -->
 
 
 
-  <div class="block--new accordian d-none d-xl-block">
+  <div class="block--new accordian d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
+    <br>
     <p class="headl wow fadeIn" align="center">Une approche <span class="bluetxt">rafraîchissante </span>du crédit </p>
   </div>
 
   <div class="block--new accordian d-block d-sm-none d-none d-md-block d-lg-none">
+    <br>
     <p class="headl iphoneMobileview wow fadeIn" align="center">Une approche <span class="bluetxt">rafraîchissante </span>du crédit </p>
   </div>
 
 
   <!-- Accordian -->
-  <div class="block--new d-none d-xl-block">
-
+  <div class="block--new d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
     <section class="header">
       <div class="container">
         <div class="row">
@@ -1416,21 +1436,13 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-  <div class="container-fluid p-0">
+  <!-- <div class="container-fluid p-0">
 
     <div class="row appmobile">
       <div class="col-1">
       </div>
       <div class="col mt-5">
-        <div class="d-none d-xl-block wow bounceInLeft">
+        <div class="d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none wow bounceInLeft">
           <p class="headl whitetext mt-5 pt-5" align="left">Découvrez </br>l’application finfrog ! </p>
           <p class="text1 whitetext" align="left">Bientôt de nouvelles fonctionnalités pour vous aider à anticiper les </br>découverts.</p>
         </div>
@@ -1444,22 +1456,22 @@
           <img src="/images/badge_google_play.png" class="gogleplay" alt="" width="160">
         </div>
       </div>
-      <div class="col p-0 d-none d-xl-block  wow bounceInRight">
+      <div class="col p-0 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none  wow bounceInRight">
         <img src="/images/app-screens.png" alt="">
       </div>
       <div class="d-block d-sm-none d-none d-md-block d-lg-none  wow bounceInRight">
         <img class="imageMobileView" src="/images/app-screens.png" alt="">
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="block--new">
-    <p class="headl d-none d-xl-block wow bounceInLeft" align="center"><span class="bluetxt">Sécurité des données </span> </br>et transactions bancaires
+    <p class="headl d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none wow bounceInLeft" align="center"><span class="bluetxt">Sécurité des données </span> </br>et transactions bancaires
     </p>
     <p class="headl iphoneMobileview d-block d-sm-none d-none d-md-block d-lg-none wow bounceInLeft" align="center"><span class="bluetxt">Sécurité des données </span> </br>et transactions bancaires
     </p>
 
-    <div class="d-none d-xl-block">
+    <div class="d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
       <div class="row ">
         <div class="col-1">
         </div>
@@ -1500,18 +1512,19 @@
   </div>
 
   <div class="block--new ">
-    <p class="headl d-none d-xl-block wow bounceInRight" align="center">Un service encadré par</br><span class="bluetxt">la réglementation française</span>
+    <p class="headl d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none wow bounceInRight" align="center">Un service encadré par</br><span class="bluetxt">la réglementation française</span>
     <p class="headl iphoneMobileview d-block d-sm-none d-none d-md-block d-lg-none" align="center">Un service encadré par</br><span class="bluetxt">la réglementation française</span>
     <div class="row mt-5 mt-5">
       <div class="col-1">
       </div>
       <div class="col-md-4">
-        <p class="text1 mt-4 d-none d-xl-block wow bounceInLeft" align="left">Finfrog est un intermédiaire en financement participatif enregistré à l’ORIAS et encadré par les autorités françaises (ACPR - Banque de France)</span>
-        <p class="text1 responsive mt-4 d-block d-sm-none d-none d-md-block d-lg-none bounceInLeft" align="left">Finfrog est un intermédiaire en financement participatif enregistré à l’ORIAS et encadré par les autorités françaises (ACPR - Banque de
+        <p class="text1 mt-4 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none wow bounceInLeft" align="left">Rajo est un intermédiaire en financement participatif enregistré à l’ORIAS et encadré par les autorités
+          françaises (ACPR - Banque de France)</span>
+        <p class="text1 responsive mt-4 d-block d-sm-none d-none d-md-block d-lg-none bounceInLeft" align="left">Rajo est un intermédiaire en financement participatif enregistré à l’ORIAS et encadré par les autorités françaises (ACPR - Banque de
           France)</span>
         </p>
       </div>
-      <div class="col-md-6 d-none d-xl-block wow bounceInRight">
+      <div class="col-md-6 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none wow bounceInRight">
         <img src="/images/11.jpg " alt="" height="150px" class="threeImages"> <img src="/images/2.jpg" alt="" height="150px" class="threeImages"> <img src="/images/3.jpg" alt="" height="150px" class="threeImages">
       </div>
       <div class="col-md-6 responsiveimagesthree d-block d-sm-none d-none d-md-block d-lg-none wow bounceInRight">
@@ -1523,157 +1536,175 @@
     </div>
   </div>
 
-  <div class="container-fluid p-0 m-0 d-none d-xl-block">
+  <div class="container-fluid p-0 m-0 d-none d-xl-block d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
     <div class="logobackground">
       <div class="row">
         <div class="col">
           <div class="container1">
             <p class="headl wow bounceInRight" align="center" style="margin-top:150px;"><span class="bluetxt">Les médias </span> parlent de nous
             </p>
-            <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logobmf@2x.png " alt="" class="logoimage2"></div>
+            <button type="button" class="btn btn-primary mt-4 wow fadeIn" align="center" style="width: 250px;">Devenir partenaire&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <!-- <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logobmf@2x.png " alt="" class="logoimage2"></div>
             <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-cbanque-grayscale@2x.png " alt="" class="logoimage2"></div>
             <div class="lgo_img wow bounceIn"> <img src="/images/logo-echos-grayscale@2x.png" alt="" class="logoimage2"></div>
             <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-jdn@2x.png " alt="" class="logoimage2"></div>
             <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-le-monde@2x.png " alt="" class="logoimage2"></div>
-            <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-maddyness@2x.png " alt="" class="logoimage2"></div>
+            <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-maddyness@2x.png " alt="" class="logoimage2"></div> -->
           </div>
         </div>
       </div>
-      <div class="row" style="margin-top:100px;">
+      <!-- <div class="row" style="margin-top:100px;">
         <div class="col">
           <p class="headl wow bounceInLeft" align="center">Nos <span class="bluetxt">partenaires</span></p>
         </div>
-      </div>
+      </div> -->
+      <!-- <div class="container-fluid"><br><br> -->
+        <!-- <div class="row"> -->
 
-      <div class="row mt-5">
-        <div class="col">
-        </div>
-
-        <div class="col">
-          <div class="spacetext"> </div>
-          <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-bpi@2x.png " alt="" class="logoimage3"></div>
-        </div>
-
-        <div class="col">
-          <div class="spacetext">
+          <!-- <div class="col-6">
             <p class="text1 wow bounceInLeft" align="center">Ils nous soutiennent</p>
-          </div>
-          <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-arkea@2x.png " alt="" class="logoimage3"></div>
-          <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-francefintech@2x.png " alt="" class="logoimage3"></div>
-        </div>
-
-        <div class="col">
-          <div class="spacetext"> </div>
-          <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-mangopay@2x.png " alt="" class="logoimage3"></div>
-        </div>
-
-        <div class="vertical"></div>
-
-        <div class="col">
-          <div class="spacetext"> </div>
-          <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-ubereat@2x.png " alt="" class="logoimage3"></div>
-        </div>
-
-        <div class="col">
-          <div class="spacetext">
-            <p class="text1 wow bounceInRight" align="center">Ils proposent nos prêts</p>
-          </div>
-          <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-brigad@2x.png " alt="" class="logoimage3"></div>
-          <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-gojob.png" alt="" class="logoimage3"></div>
-          <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary mt-4 wow fadeIn" align="center" style="width: 250px;">Devenir partenaire&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="spacetext"> </div>
-          <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-deliveroo@2x.png " alt="" class="logoimage3"></div>
-        </div>
-
-        <div class="col">
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
-
-  <!-- mobiles -->
-  <div class="container-fluid p-0 m-0 d-block d-sm-none d-none d-md-block d-lg-none">
-    <div class="logobackground">
-      <div class="row">
-        <div class="col">
-          <div class="container1">
-            <p class="headl iphoneMobileview wow bounceInRight" align="center" style="margin-top:150px;"><span class="bluetxt">Les médias </span> parlent de nous
-            </p>
-            <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logobmf@2x.png " alt="" class="logoimage2 mobile"></div>
-            <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-cbanque-grayscale@2x.png " alt="" class="logoimage2 mobile"></div>
-            <div class="lgo_img wow bounceIn"> <br><br><img src="/images/logo-echos-grayscale@2x.png" alt="" class="logoimage23 mobile"><br><br></div>
-            <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-jdn@2x.png " alt="" class="logoimage2 mobile"></div>
-            <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-le-monde@2x.png " alt="" class="logoimage2 mobile"></div>
-            <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-maddyness@2x.png " alt="" class="logoimage2 mobile"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-top:100px;">
-        <div class="col">
-          <p class="headl iphoneMobileview wow bounceInLeft" align="center">Nos <span class="bluetxt">partenaires</span></p>
-        </div>
-      </div>
-
-      <div class="">
-        <div class="spacetext">
-          <p class="text1 wow bounceInLeft" align="center"><b>Ils nous soutiennent</b></p>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-bpi@2x.png " alt="" class="logoimage3"></div>
-          </div>
-          <div class="col-6">
-            <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-arkea@2x.png" alt="" class="logoimage3"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-mangopay@2x.png " alt="" class="logoimage3"></div>
-          </div>
-          <div class="col-6">
-            <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-francefintech@2x.png" alt="" class="logoimage3"></div>
-          </div>
-        </div>
-        <br><br>
-        <div class="spacetext">
-          <p class="text1 wow bounceInRight" align="center"><b>Ils proposent nos prêt</b></p>
-        </div>
-
-        <div class="row">
-          <div class="col-6">
-            <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-ubereat@2x.png " alt="" class="logoimage3"></div>
-          </div>
-          <div class="col-6">
-            <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-brigad@2x.png" alt="" class="logoimage3"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-deliveroo@2x.png " alt="" class="logoimage3"></div>
-          </div>
-          <div class="col-6">
-            <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-gojob.png" alt="" class="logoimage3"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex justify-content-center">
-              <button type="button" class="btn btn-primary mt-4" align="center" style="width: 300px;">Devenir partenaire&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <div class="row">
+              <div class="col-4">
+                <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-bpi@2x.png " alt="" class="logoimage3"></div>
+              </div>
+              <div class="col-4">
+                <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-arkea@2x.png " alt="" class="logoimage3"></div>
+              </div>
+              <div class="col-4">
+                <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-mangopay@2x.png " alt="" class="logoimage3"></div>
+              </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="col-4">
 
-        </div>
-        <br><br>
+              </div>
+              <div class="col-4">
+                <div class="lgo_img wow bounceIn ml-auto mr-auto"> <img src="/images/Set 2/logo-francefintech@2x.png " alt="" class="logoimage3"></div>
+              </div>
+              <div class="col-4">
+
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="vertical"></div> -->
+
+          <!-- <div class="col-6">
+            <p class="text1 wow bounceInLeft" align="center">Ils proposent nos prêts</p>
+            <div class="row">
+              <div class="col-4">
+                <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-ubereat@2x.png " alt="" class="logoimage3"></div>
+              </div>
+              <div class="col-4">
+                <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-brigad@2x.png " alt="" class="logoimage3"></div>
+              </div>
+              <div class="col-4">
+                <div class="lgo_img wow bounceIn"> <img src="/images/Set 2/logo-deliveroo@2x.png " alt="" class="logoimage3"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+
+              </div>
+              <div class="col-4">
+                <div class="lgo_img wow bounceIn ml-auto mr-auto"> <img src="/images/Set 2/logo-gojob.png " alt="" class="logoimage3"></div><br>
+                <button type="button" class="btn btn-primary mt-4 wow fadeIn" align="center" style="width: 250px;">Devenir partenaire&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+              <div class="col-4">
+              </div>
+            </div>
+          </div> -->
+
+        <!-- </div> -->
+      <!-- </div> -->
+
+      <div class="col-12">
       </div>
 
     </div>
   </div>
+</div>
+<br><br>
+
+<!-- mobiles -->
+<div class="container-fluid p-0 m-0 d-block d-sm-none d-none d-md-block d-lg-none">
+  <div class="logobackground">
+    <div class="row">
+      <div class="col">
+        <div class="container1">
+          <p class="headl iphoneMobileview wow bounceInRight" align="center" style="margin-top:150px;"><span class="bluetxt">Les médias </span> parlent de nous
+          </p>
+          <button type="button" class="btn btn-primary mt-4 wow fadeIn" align="center" style="width: 250px;">Devenir partenaire&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          <br><br>
+          <!-- <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logobmf@2x.png " alt="" class="logoimage2 mobile"></div>
+          <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-cbanque-grayscale@2x.png " alt="" class="logoimage2 mobile"></div>
+          <div class="lgo_img wow bounceIn"> <br><br><img src="/images/logo-echos-grayscale@2x.png" alt="" class="logoimage23 mobile"><br><br></div>
+          <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-jdn@2x.png " alt="" class="logoimage2 mobile"></div>
+          <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-le-monde@2x.png " alt="" class="logoimage2 mobile"></div>
+          <div class="lgo_img wow bounceIn"> <img src="/images/1st set/logo-maddyness@2x.png " alt="" class="logoimage2 mobile"></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row" style="margin-top:100px;">
+      <div class="col">
+        <p class="headl iphoneMobileview wow bounceInLeft" align="center">Nos <span class="bluetxt">partenaires</span></p>
+      </div>
+    </div> -->
+
+    <!-- <div class="">
+      <div class="spacetext">
+        <p class="text1 wow bounceInLeft" align="center"><b>Ils nous soutiennent</b></p>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-bpi@2x.png " alt="" class="logoimage3"></div>
+        </div>
+        <div class="col-6">
+          <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-arkea@2x.png" alt="" class="logoimage3"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-mangopay@2x.png " alt="" class="logoimage3"></div>
+        </div>
+        <div class="col-6">
+          <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-francefintech@2x.png" alt="" class="logoimage3"></div>
+        </div>
+      </div>
+      <br><br>
+      <div class="spacetext">
+        <p class="text1 wow bounceInRight" align="center"><b>Ils proposent nos prêt</b></p>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-ubereat@2x.png " alt="" class="logoimage3"></div>
+        </div>
+        <div class="col-6">
+          <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-brigad@2x.png" alt="" class="logoimage3"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-deliveroo@2x.png " alt="" class="logoimage3"></div>
+        </div>
+        <div class="col-6">
+          <div class="lgo_img mobile wow bounceIn"> <img src="/images/Set 2/logo-gojob.png" alt="" class="logoimage3"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary mt-4" align="center" style="width: 300px;">Devenir partenaire&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <br><br>
+    </div> -->
+
+  </div>
+</div>
 
 
 </div>

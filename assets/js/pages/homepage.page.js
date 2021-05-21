@@ -8,6 +8,7 @@ parasails.registerPage('homepage', {
     totalVatRange: '0',
     month: 3,
     activeIndex: 1,
+    // valueOfRange : '300',
   },
 
   //  ╦  ╦╔═╗╔═╗╔═╗╦ ╦╔═╗╦  ╔═╗
@@ -116,16 +117,20 @@ parasails.registerPage('homepage', {
       this.month = x;
 
       if (x == '3') {
+        this.valueOfRange = '100';
         var value = (this.valueOfRange / 100) * 3.89;
         this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+
       }
 
       if (x == '4') {
+        this.valueOfRange = '250';
         var value = (this.valueOfRange / 100) * 4.71;
         this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
       }
 
       if (x == '5') {
+        this.valueOfRange = '500';
         var value = (this.valueOfRange / 100) * 6.31;
         this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
       }
