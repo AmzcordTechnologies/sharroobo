@@ -1008,3 +1008,17 @@ div#v-pills-tabContent {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+input.responciveRange {
+  width: 100%;
+}

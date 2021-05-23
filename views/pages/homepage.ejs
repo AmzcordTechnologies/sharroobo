@@ -105,10 +105,24 @@
           </div>
           <div class="col-12">
             <div class="value" style="padding-left: 110px;">
-              <label class="sign">{{valueOfRange}}€</label>
+              <label class="sign">{{valueOfRange}}Fdj</label>
             </div><br>
-            <div class="float-left">
-              <label class="priceRange">100€</label>&nbsp;<input style="width: 200px;" class="range" type="range" min="100" max="600" value="100£" step="1" @change="onChange($event)" />&nbsp;<label class="priceRange">600€</label>
+            <div class="barDive">
+              <div class="row">
+                <div class="col-12">
+                  <label class="priceRange float-left">100Fdj</label>
+                  <label class="priceRange float-right">500Fdj</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <input style="" class="responciveRange" type="range" min="100" max="500" value="100£" step="1" @change="onChange($event)" v-model="valueOfRange"/>
+                </div>
+              </div>
+              <br>
+              <!-- <br> -->
+
+              <!-- <label class="priceRange">100Fdj</label>&nbsp;&nbsp;<input class="range" type="range" min="100" max="500" value="" @change="onChange($event)" v-model="valueOfRange" />&nbsp;&nbsp;<label class="priceRange">500Fdj</label> -->
               <div class="row col-12 ml-auto mr-auto">
                 <div class="col-4">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" @click="calculateVat(3)">3 mois
@@ -309,9 +323,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -349,9 +363,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -388,9 +402,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -428,9 +442,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -468,9 +482,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -508,9 +522,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -557,9 +571,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
@@ -595,9 +609,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
@@ -633,9 +647,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
@@ -671,9 +685,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
@@ -709,9 +723,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
@@ -747,9 +761,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
 
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -796,9 +810,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -836,9 +850,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -876,9 +890,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
@@ -914,9 +928,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
@@ -952,9 +966,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
                 <path fill="currentColor"
@@ -990,9 +1004,9 @@
             </div>
             <div class="post-content">
               <h3 class="post-title">
-                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <a href="#"> </a>
               </h3>
-              <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......</p>
+              <p class="post-description blink_me">Collecting data...</p>
               <span class="post-date"><i class="fa fa-clock-o"></i>Out 27, 2019</span>
               <!-- <a href="#" class="read-more">read more</a> -->
               <svg height="15px" aria-hidden="true" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18 fa-2x">
@@ -1559,9 +1573,9 @@
         </div>
       </div> -->
       <!-- <div class="container-fluid"><br><br> -->
-        <!-- <div class="row"> -->
+      <!-- <div class="row"> -->
 
-          <!-- <div class="col-6">
+      <!-- <div class="col-6">
             <p class="text1 wow bounceInLeft" align="center">Ils nous soutiennent</p>
             <div class="row">
               <div class="col-4">
@@ -1587,9 +1601,9 @@
             </div>
           </div> -->
 
-          <!-- <div class="vertical"></div> -->
+      <!-- <div class="vertical"></div> -->
 
-          <!-- <div class="col-6">
+      <!-- <div class="col-6">
             <p class="text1 wow bounceInLeft" align="center">Ils proposent nos prêts</p>
             <div class="row">
               <div class="col-4">
@@ -1615,7 +1629,7 @@
             </div>
           </div> -->
 
-        <!-- </div> -->
+      <!-- </div> -->
       <!-- </div> -->
 
       <div class="col-12">
