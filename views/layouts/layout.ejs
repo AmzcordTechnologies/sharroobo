@@ -7,7 +7,7 @@
 <html>
 
 <head>
-  <title>sharroobo</title>
+  <title>Rajo</title>
 
   <% /* Viewport tag for sensible mobile support */ %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,29 +37,34 @@
         by the asset pipeline between "STYLES" and "STYLES END", or both.
         (https://sailsjs.com/docs/concepts/assets/task-automation)
     */ %>
+  <link href="/images/logo.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 
   <% /* Auto-injected «link» tags: */ %>
   <!--STYLES-->
   <link rel="stylesheet" href="/dependencies/bootstrap-4/bootstrap-4.css">
   <link rel="stylesheet" href="/dependencies/fontawesome.css">
+  <link rel="stylesheet" href="/styles/carousel.css">
   <link rel="stylesheet" href="/styles/importer.css">
+  <link rel="stylesheet" href="/styles/pages/animate.css">
   <link rel="stylesheet" href="/styles/responsive.css">
   <link rel="stylesheet" href="/styles/style.css">
   <!--STYLES END-->
+
+  <link rel="stylesheet" href="/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/swiper.min.css" />
+
 </head>
 
 <body>
   <div id="page-wrap">
 
     <!-- ============================ MAIN MENU============================ -->
-    <div id="main-menu" class="">
-      <nav class="navbar navbar-expand-lg  fixed-top">
+    <div id="main-menu" class="nav">
+      <nav id="nav" class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <img src="/images/logo-finfrog-blue.svg" alt="cpd_logo " class="img-fluid" width=" ">
-            <!-- <span class="text-white">CPD for Teachers</span> -->
+            <img src="/images/logo.png" alt="cpd_logo " class="img-fluid logo" width=" ">
           </a>
-
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
@@ -73,13 +78,13 @@
                 <a class="nav-link" href="/">Comment ça marche ?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/aboutus">Témoignages</a>
+                <a class="nav-link " href="/">Témoignages</a>
               </li>
             </ul>
 
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="/venue-dates">Mon compte&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="nav-link login" id="loginScroll" href="/">Mon compte&nbsp;&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
               </li>
             </ul>
 
@@ -106,38 +111,226 @@
     <%- body %>
 
     <!-- =========================== FOOTER  ==========================  -->
-    <div id="footer">
-      <div class="container">
+    <div id="footer" class="d-none d-xl-block">
+      <div class="container-fluid footer">
         <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="col-lg-2 col-md-3 col-sm-12">
+            <img src="/images/whiteLogo.png" class="img-fluid pb-3 footer" width-"150px" alt="CPDforteachers-logo">
+            <p><a href="mailto:info@cpdforteachers.com">Suivez nous</a></p>
+            <i class="fa fa-twitter text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
+            <i class="fa fa-facebook text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
+            <i class="fa fa-linkedin text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
+            <i class="fa fa-youtube-play text-white" style="font-size: 20px;" aria-hidden="true"></i>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12">
             <div class="footer-links">
-              <p><a href="/">HOME</a></p>
-              <p><a href="/aboutus">ABOUT US</a></p>
-              <p><a href="/venue-dates">VENUE DATES</a></p>
-              <!-- <p><a href="#">CASE STUDIES</a></p>
-                    <p><a href="#">BLOG</a></p> -->
-              <p><a href="/terms">TERMS</a></p>
-              <p><a href="/legal/privacy">PRIVACY POLICY</a></p>
-              <p><a href="/faq">FAQ</a></p>
+              <p class="footer"><a href="/"><b>Emprunter</b></a></p>
+              <p class="footer"><a href="/">Crédit consommation</a></p>
+              <p class="footer"><a href="/s">Prêt personnel</a></p>
+              <p class="footer"><a href="/">TERMS</a></p>
+              <p class="footer"><a href="/y">Prêt entre particuliers</a></p>
             </div>
           </div>
-          <div class="col-lg-5 col-md-5 col-sm-12">
-            <address>
-              CPD FOR TEACHERS<br>
-              UNIT 8 CRICHTON HOUSE<br>
-              11-12 MOUNT STUART SQUARE<br>
-              CARDIFF<br>
-              CF10 5EE
-            </address>
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <div class="footer-links">
+              <p class="footer"><a href="/"><b>Micro crédit</b></a></p>
+              <p class="footer"><a href="/">Crédit facile</a></p>
+              <p class="footer"><a href="/">Crédit rapide</a></p>
+              <p class="footer"><a href="/terms">Crédit sans justificatif</a></p>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 ">
-            <img src="/images/logo-finfrog-blue.svg" class="img-fluid pb-3" width-"150px" alt="CPDforteachers-logo">
-            <!-- <p><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;<i class="fa fa-facebook" aria-hidden="true"></i&nbsp;><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;<i class="fa fa-youtube-play" aria-hidden="true"></i></p> -->
-            <p><a href="mailto:info@cpdforteachers.com">Suivez nous</a></p>
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <div class="footer-links">
+              <p class="footer"><a href="/"><b>Plus sur Rajo</b></a></p>
+              <p class="footer"><a href="/">Notre mission</a></p>
+              <p class="footer"><a href="/">PresseS</a></p>
+              <p class="footer"><a href="/">Nous rejoindre</a></p>
+              <p class="footer"><a href="/">Blog</a></p>
+              <p class="footer"><a href="/">Publications</a></p>
+            </div>
           </div>
+          <div class="col-lg-4 col-md-3 col-sm-12 ">
+            <div class="footer-links">
+              <p class="footer"><a href="/"><b>Informations règlementaires</b></a></p>
+              <p class="footer"><a href="/">Statistiques</a></p>
+              <p class="footer"><a href="/">CGU Mangopay</a></p>
+              <p class="footer"><a href="/">CGU rajo</a></p>
+              <p class="footer"><a href="/">Données personnelles</a></p>
+              <p class="footer"><a href="/">Informations réglementaires</a></p>
+              <p class="footer"><a href="/">Sécurité</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-12">
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <div class="footer-links">
+              <p class="footer"><a href="/"><b>Guide du crédit</b></a></p>
+              <p class="footer"><a href="/">Rachat de crédit</a></p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <div class="footer-links">
+              <p class="footer"><a href="/"><b>Guide du budget</b></a></p>
+              <p class="footer"><a href="/">Découvert bancaire</a></p>
+              <p class="footer"><a href="/">Paiement en plusieurs fois</a></p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <div class="footer-links">
+              <p class="footer"><a href="/"><b>Aller plus loin avec Rajo</b></a></p>
+              <p class="footer"><a href="/">Devenir prêteur</a></p>
+              <p class="footer"><a href="/">Projets à financer</a></p>
+              <p class="footer"><a href="/">Nous rejoindre</a></p>
+              <p class="footer"><a href="/">Rajo PRO</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-3 col-sm-12 ">
+            <div class="footer-links">
+              <p class="footer"><a href="/"><b>Support</b></a></p>
+              <p class="footer"><a href="/">Nous contacter</a></p>
+              <p class="footer"><a href="/">FAQ</a></p>
+              <p class="footer"><a href="/">Lexique</a></p>
+            </div>
+          </div>
+
           <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
             <div class="border-top copyright text-center">
-              <p>©2020 CPD for Teachers. All Right Reserved. &nbsp&nbsp&nbsp| &nbsp&nbsp&nbsp Designed & Developed by <a href="https://www.cardiffappdevelopers.co.uk/" target="_blank"><strong>Cardiff App Developers</strong></a></p>
+              <p>© 2021 rajo. Tous droits réservés. &nbsp&nbsp&nbsp| &nbsp&nbsp&nbsp Connexion sécurisée <strong>Certificat SSL</strong></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- =========================== Mobile FOOTER  ==========================  -->
+    <div id="footer" class="d-block d-sm-none d-none d-md-block d-lg-none d-none d-lg-block d-xl-none d-none d-sm-block d-md-none">
+      <div class="container footer">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-12 text-center" style="padding-bottom:30px">
+            <img src="/images/whiteLogo.png" class="img-fluid pb-3 footer ml-auto mr-auto" width-"150px" alt="logo">
+            <p><a href="mailto:info@cpdforteachers.com">Suivez nous</a></p>
+            <i class="fa fa-twitter text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
+            <i class="fa fa-facebook text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
+            <i class="fa fa-linkedin text-white" style="font-size: 20px;" aria-hidden="true"></i>&nbsp;&nbsp;
+            <i class="fa fa-youtube-play text-white" style="font-size: 20px;" aria-hidden="true"></i>
+          </div>
+
+
+          <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-5">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Emprunter</b></a></p>
+                <p class="footer"><a href="/">Crédit consommation</a></p>
+                <p class="footer"><a href="/s">Prêt personnel</a></p>
+                <p class="footer"><a href="/">TERMS</a></p>
+                <p class="footer"><a href="/y">Prêt entre particuliers</a></p>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Micro crédit</b></a></p>
+                <p class="footer"><a href="/">Crédit facile</a></p>
+                <p class="footer"><a href="/">Crédit rapide</a></p>
+                <p class="footer"><a href="/terms">Crédit sans justificatif</a></p>
+              </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-5">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Plus sur Rajo</b></a></p>
+                <p class="footer"><a href="/">Notre mission</a></p>
+                <p class="footer"><a href="/">PresseS</a></p>
+                <p class="footer"><a href="/">Nous rejoindre</a></p>
+                <p class="footer"><a href="/">Blog</a></p>
+                <p class="footer"><a href="/">Publications</a></p>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Informations règlementaires</b></a></p>
+                <p class="footer"><a href="/">Statistiques</a></p>
+                <p class="footer"><a href="/">CGU Mangopay</a></p>
+                <p class="footer"><a href="/">CGU rajo</a></p>
+                <p class="footer"><a href="/">Données personnelles</a></p>
+                <p class="footer"><a href="/">Informations réglementaires</a></p>
+                <p class="footer"><a href="/">Sécurité</a></p>
+              </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-5">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Guide du crédit</b></a></p>
+                <p class="footer"><a href="/">Rachat de crédit</a></p>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Guide du budget</b></a></p>
+                <p class="footer"><a href="/">Découvert bancaire</a></p>
+                <p class="footer"><a href="/">Paiement en plusieurs fois</a></p>
+              </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-5">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Aller plus loin avec Rajo</b></a></p>
+                <p class="footer"><a href="/">Devenir prêteur</a></p>
+                <p class="footer"><a href="/">Projets à financer</a></p>
+                <p class="footer"><a href="/">Nous rejoindre</a></p>
+                <p class="footer"><a href="/">Rajo PRO</a></p>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="footer-links mobile">
+                <p class="footer"><a href="/"><b>Support</b></a></p>
+                <p class="footer"><a href="/">Nous contacter</a></p>
+                <p class="footer"><a href="/">FAQ</a></p>
+                <p class="footer"><a href="/">Lexique</a></p>
+              </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
+            <div class="border-top copyright text-center">
+              <p>© 2021 rajo. Tous droits réservés. &nbsp&nbsp&nbsp| &nbsp&nbsp&nbsp Connexion sécurisée <strong>Certificat SSL</strong></a></p>
             </div>
           </div>
         </div>
@@ -147,7 +340,9 @@
   </div>
 
 
-  <% /*
+  <%
+
+  /*
       Client-side JavaScript
       ========================
 
@@ -161,9 +356,33 @@
 
   <% /* Delete the global `self` to help avoid client-side bugs.
     (see https://developer.mozilla.org/en-US/docs/Web/API/Window/self) */ %>
+
+  <script type="text/javascript">
+    var myNav = document.getElementById("nav");
+    var login = document.getElementById("loginScroll");
+
+    window.onscroll = function() {
+      console.log("hits");
+      "use strict";
+      if (document.body.scrollTop >= 10 || document.documentElement.scrollTop >= 10) {
+        myNav.classList.add("scroll");
+        login.classList.add("chnageClr");
+        myNav.classList.remove("chnageClrWhite");
+
+      } else {
+        myNav.classList.remove("scroll");
+        login.classList.remove("chnageClr");
+        // login.classList.add("chnageClrWhite");
+      }
+    };
+  </script>
+
+
   <script>
     delete window.self;
   </script>
+
+
 
   <%/* bowser.js (for browser detection) -- included inline to avoid issues with minification that could affect the unsupported browser overlay */%>
   <script>
@@ -560,7 +779,9 @@
   <script src="/dependencies/bootstrap-4/bootstrap-4.bundle.js"></script>
   <script src="/dependencies/cloud.js"></script>
   <script src="/dependencies/moment.js"></script>
+  <script src="/dependencies/owl.carousel.min.js"></script>
   <script src="/dependencies/parasails.js"></script>
+  <script src="/dependencies/wow.js"></script>
   <script src="/js/cloud.setup.js"></script>
   <script src="/js/components/account-notification-banner.component.js"></script>
   <script src="/js/components/ajax-button.component.js"></script>
@@ -570,6 +791,7 @@
   <script src="/js/components/modal.component.js"></script>
   <script src="/js/components/stripe-card-element.component.js"></script>
   <script src="/js/utilities/open-stripe-checkout.js"></script>
+  <script src="/js/custom.js"></script>
   <script src="/js/pages/account/account-overview.page.js"></script>
   <script src="/js/pages/account/edit-password.page.js"></script>
   <script src="/js/pages/account/edit-profile.page.js"></script>
