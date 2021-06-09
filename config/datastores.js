@@ -52,10 +52,6 @@ module.exports.datastores = {
     // url: 'mysql://user:password@host:port/database',
 
     adapter: 'sails-mongo',
-    // url: 'mongodb://root@localhost/cpdForTeachers',
-
-    // url: 'mongodb://root:root@cluster0-shard-00-00.qqmxw.mongodb.net:27017,cluster0-shard-00-01.qqmxw.mongodb.net:27017,cluster0-shard-00-02.qqmxw.mongodb.net:27017/cluster0',
-    // url: 'mongodb://root:root@cluster0-shard-00-00.zemkx.mongodb.net:27017,cluster0-shard-00-01.zemkx.mongodb.net:27017,cluster0-shard-00-02.zemkx.mongodb.net:27017/cpdStagine?ssl=true&replicaSet=atlas-p7o8u8-shard-0&authSource=admin&retryWrites=true&w=majority',
     url: 'mongodb://admin:admin@cluster0-shard-00-00.9qan2.mongodb.net:27017,cluster0-shard-00-01.9qan2.mongodb.net:27017,cluster0-shard-00-02.9qan2.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-12u86y-shard-0&authSource=admin&retryWrites=true&w=majority',
     ssl: true,
     replicaSet: 'atlas-12u86y-shard-0',
