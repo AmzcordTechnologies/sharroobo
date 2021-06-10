@@ -23,13 +23,22 @@ module.exports = {
   },
 
 
-  fn: async function () {
+  fn: async function (inputs, exits) {
+
+    var moment = require("moment");
+
+    const start = Date.now();
+
+    var dateShow = moment(start).format("MMM Do YYYY");
 
     if (this.req.me) {
       throw {redirect:'/welcome'};
     }
 
-    return {};
+    return exits.success({
+      dateShow: dateShow,
+    });
+
 
   }
 
