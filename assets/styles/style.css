@@ -98,7 +98,7 @@ li.nav-item {
 }
 
 div#footer {
-  background-color: #f7b585;
+  background-color: #4293ea8c !important;
   padding: 50px 40px 10px 40px;
 }
 
@@ -108,7 +108,7 @@ div#footer p {
 
 div#footer p a {
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 div#footer p a:hover {
@@ -1029,6 +1029,6 @@ div#footer {
 }
 
 div#footer p a {
-  color: #f7b585;
-  font-weight: 300;
+  color: #262422f2;
+  font-weight: 400;
 }
