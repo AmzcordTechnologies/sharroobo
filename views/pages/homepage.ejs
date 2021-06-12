@@ -8,11 +8,11 @@
             <div class="laondingpageTest">
               <div class="">
                 <p class="headl mt-5 mb-1 wow bounceInLeft">Microcrédit facile, agile e<br>
-                  <b class="responsable">complet.</b><br>
+                  <b class="responsable">complet</b><br>
                 </p>
                 <small>
                   <p class="wow bounceInLeft">
-                    Votre prêt en 48h, jusqu’à 20000 fdj.<br>
+                    Votre prêt en 48h, jusqu’à 20,000 fdj.<br>
                     10 fois moins cher qu’un découvert.
                   </p>
 
@@ -32,10 +32,10 @@
           </div>
           <div class="container progressbar">
             <div class="value">
-              <label class="sign">{{valueOfRange}} fdj</label>
+              <label class="sign" id="rangeValue"></label>
             </div><br>
             <div class="float-left">
-              <label class="priceRange">5000 fdj</label>&nbsp;&nbsp;<input class="range" type="range" min="5000" max="20000" value="" @change="onChange($event)" v-model="valueOfRange" />&nbsp;&nbsp;<label class="priceRange">20000 fdj</label>
+              <label class="priceRange">5000 fdj</label>&nbsp;&nbsp;<input class="range" type="range" min="5000" max="20000" value="" @change="onChange($event)" v-model="valueOfRange" />&nbsp;&nbsp;<label class="priceRange">20,000 fdj</label>
               <br><br>
               <!-- <br><br> -->
               <div class="row radio-buttons">
@@ -66,7 +66,10 @@
                   <div class="col-6 avarageCol">
                   </div>
                   <div class="col-6 avarageCol">
-                    Mensualité: <label class="price">{{totalVatRange}}&nbsp;fdj/mois</label>
+                    Mensualité:
+                    <label class="price" id="demo"></label>
+                    <label class="price">
+                       fdj | mois</label>
                   </div>
                 </div>
               </div>
@@ -85,11 +88,11 @@
             <div class="laondingpageTest">
               <div class="">
                 <p class="headl iphoneMobileview wow bounceInLeft">Microcrédit facile, agile et<br>
-                  <b class="responsable">complet.</b>
+                  <b class="responsable">complet</b>
                 </p><br>
                 <small>
                   <p class="wow bounceInLeft">
-                    Votre prêt en 48h, jusqu’à 20000 euros.<br>
+                    Votre prêt en 48h, jusqu’à 20,000 euros.<br>
                     10 fois moins cher qu’un découvert.
                   </p>
                   <br>
@@ -105,13 +108,14 @@
           </div>
           <div class="col-12">
             <div class="value" style="padding-left: 110px;">
-              <label class="sign">{{valueOfRange}} fdj</label>
+              <label class="sign" id="mobileRangeValue"></label>
+
             </div><br>
             <div class="barDive">
               <div class="row">
                 <div class="col-12">
                   <label class="priceRange float-left">5000 fdj</label>
-                  <label class="priceRange float-right">20000 fdj</label>
+                  <label class="priceRange float-right">20,000 fdj</label>
                 </div>
               </div>
               <div class="row">
@@ -141,8 +145,10 @@
           <br>
           <div class="row">
             <div class="col-12 avarageCol text-right">
-              <!-- Mensualité: <label class="price">34.63€/mois</label> -->
-              Mensualité: <label class="price">{{totalVatRange}} fdj/mois</label>
+              Mensualité:
+              <label class="price" id="mobileDemo"></label>
+              <label class="price">
+                 fdj | mois</label>
             </div>
           </div>
           <br>

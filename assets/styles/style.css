@@ -123,7 +123,7 @@ div#footer address {
 }
 
 div#footer .copyright p {
-  color: #fff;
+  color: #333333 !important;
   font-weight: 300;
   font-size: 12px;
   margin: 0;
@@ -856,7 +856,7 @@ p.text1.responsive.d-xl-none.d-block.d-sm-none {
   .nav-pills-custom .nav-link::before {
     content: '';
     display: block;
-    border-top: 8px solid transparent;
+    border-top: 8px solid transparent ;
     border-left: 10px solid #fff;
     border-bottom: 8px solid transparent;
     position: absolute;
@@ -1031,4 +1031,9 @@ div#footer {
 div#footer p a {
   color: #262422f2;
   font-weight: 400;
+}
+
+div#footer p a:hover {
+    color: #846239;
+    transition: .3s;
 }

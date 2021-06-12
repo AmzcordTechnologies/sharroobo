@@ -8,7 +8,6 @@ parasails.registerPage('homepage', {
     totalVatRange: '0',
     month: 3,
     activeIndex: 1,
-    // valueOfRange : '300',
   },
 
   //  ╦  ╦╔═╗╔═╗╔═╗╦ ╦╔═╗╦  ╔═╗
@@ -24,6 +23,16 @@ parasails.registerPage('homepage', {
     new WOW().init();
 
     var range = document.getElementById('g-range-value');
+
+    const number1 = document.getElementById("rangeValue");
+    number1.innerHTML =  "5000 fdj";
+    const demo = document.getElementById("demo");
+    demo.innerHTML =  "0";
+
+    const mobileRangeValue = document.getElementById("mobileRangeValue");
+    mobileRangeValue.innerHTML =  "5000 fdj";
+    const mobileDemo = document.getElementById("mobileDemo");
+    mobileDemo.innerHTML =  "0";
 
     $(document).ready(function() {
       $("#news-slider").owlCarousel({
@@ -87,6 +96,11 @@ parasails.registerPage('homepage', {
 
     onChange: function(event) {
 
+      const number = document.getElementById("rangeValue");
+      number.innerHTML = event.target.value + " fdj";
+
+      const mobileRangeValue = document.getElementById("mobileRangeValue");
+      mobileRangeValue.innerHTML = event.target.value + " fdj";
 
       if (this.month > 0) {
         if (this.month == 3) {
@@ -109,6 +123,13 @@ parasails.registerPage('homepage', {
         this.valueOfRange = event.target.value;
       }
 
+
+
+      document.getElementById("demo").innerHTML = this.totalVatRange;
+      document.getElementById("mobileDemo").innerHTML = this.totalVatRange;
+
+      console.log(this.totalVatRange);
+
     },
 
     calculateVat: function(x) {
@@ -119,20 +140,46 @@ parasails.registerPage('homepage', {
       if (x == '3') {
         this.valueOfRange = '5000';
         var value = (this.valueOfRange / 100) * 3.89;
-        this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+        const number = document.getElementById("rangeValue");
+        number.innerHTML =  "5000 fdj";
+        const number2 = document.getElementById("demo");
+        number2.innerHTML = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
 
+        // mobiles
+        const mobileRangeValue = document.getElementById("mobileRangeValue");
+        mobileRangeValue.innerHTML =  "5000 fdj";
+        const mobileDemo = document.getElementById("mobileDemo");
+        mobileDemo.innerHTML = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
       }
 
       if (x == '4') {
         this.valueOfRange = '12500';
         var value = (this.valueOfRange / 100) * 4.71;
-        this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+        const number1 = document.getElementById("rangeValue");
+        number1.innerHTML =  "12,500 fdj";
+        const number = document.getElementById("demo");
+        number.innerHTML = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+
+        // mobiles
+        const mobileRangeValue = document.getElementById("mobileRangeValue");
+        mobileRangeValue.innerHTML =  "12,500 fdj";
+        const mobileDemo = document.getElementById("mobileDemo");
+        mobileDemo.innerHTML = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
       }
 
       if (x == '5') {
         this.valueOfRange = '20000';
         var value = (this.valueOfRange / 100) * 6.31;
-        this.totalVatRange = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+        const number1 = document.getElementById("rangeValue");
+        number1.innerHTML =  "20,000 fdj";
+        const number = document.getElementById("demo");
+        number.innerHTML = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
+
+        // mobiles
+        const mobileRangeValue = document.getElementById("mobileRangeValue");
+        mobileRangeValue.innerHTML =  "20,000 fdj";
+        const mobileDemo = document.getElementById("mobileDemo");
+        mobileDemo.innerHTML = ((parseInt(value) + parseInt(this.valueOfRange)) / 3).toFixed(2);
       }
 
     },
