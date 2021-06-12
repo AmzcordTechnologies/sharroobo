@@ -6,23 +6,23 @@
       <ajax-form action="signup" :syncing.sync="syncing" :cloud-error.sync="cloudError" :form-errors.sync="formErrors" :form-data="formData" :form-rules="formRules" @submitted="submittedForm()">
         <div class="form-group">
 
-          <input class="form-control" id="full-name" type="text"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.fullName" placeholder="Nom et prénom" autocomplete="name" focus-first>
-          <div class="invalid-feedback" v-if="formErrors.fullName">Please enter your full name.</div>
+          <input class="form-control" id="full-name" type="text"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.fullName" placeholder="Nom avec initiales" autocomplete="name" focus-first>
+          <div class="invalid-feedback" v-if="formErrors.fullName">S'il vous plait entrez votre nom entier.</div>
         </div>
         <div class="form-group">
 
           <input class="form-control" id="email-address" type="email"  :class="[formErrors.emailAddress ? 'is-invalid' : '']" v-model.trim="formData.emailAddress" placeholder="Adresse e-mail" autocomplete="email">
-          <div class="invalid-feedback" v-if="formErrors.emailAddress">Please enter a valid email address.</div>
+          <div class="invalid-feedback" v-if="formErrors.emailAddress">S'il vous plaît, mettez une adresse email valide.</div>
         </div>
         <div class="form-group">
 
-          <input class="form-control" id="password" type="password"  :class="[formErrors.password ? 'is-invalid' : '']" v-model.trim="formData.password" placeholder="Choisissez un mot de passe" autocomplete="new-password">
-          <div class="invalid-feedback" v-if="formErrors.password">Please enter a password.</div>
+          <input class="form-control" id="password" type="password"  :class="[formErrors.password ? 'is-invalid' : '']" v-model.trim="formData.password" placeholder="CHoisissez un mot de passe" autocomplete="new-password">
+          <div class="invalid-feedback" v-if="formErrors.password">Veuillez entrer un mot de passe.</div>
         </div>
         <div class="form-group">
 
           <input class="form-control" id="confirm-password" type="password"  :class="[formErrors.confirmPassword ? 'is-invalid' : '']" v-model.trim="formData.confirmPassword" placeholder="Confirmez le mot de passe" autocomplete="new-password">
-          <div class="invalid-feedback" v-if="formErrors.confirmPassword">Your password and confirmation do not match.</div>
+          <div class="invalid-feedback" v-if="formErrors.confirmPassword">Votre mot de passe et votre confirmation ne correspondent pas.</div>
         </div>
         <div class="form-group form-check">
           <input class="form-check-input" id="terms-agreement" type="checkbox" v-model="formData.agreed">
@@ -32,7 +32,7 @@
         <cloud-error v-else-if="cloudError"></cloud-error>
         <div class="row submitbutton">
           <div class="col-6">
-            <ajax-button :syncing="syncing" class="btn-dark btn-lg btn-block"><b>Suivant</b></ajax-button>
+          <ajax-button :syncing="syncing" class="btn-dark btn-lg btn-block"><b>suivante</b></ajax-button>
           </div>
           <div class="col-6 Forgot text-black">
             <a href="/login"><i class="fa fa-chevron-left" aria-hidden="true" align="center"></i> &nbsp;&nbsp;ou Entrée</a>

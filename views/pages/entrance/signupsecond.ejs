@@ -5,25 +5,24 @@
     <div style="max-width: 450px;" class="mx-auto">
 
       <ajax-form action="signup" :syncing.sync="syncing" :cloud-error.sync="cloudError" :form-errors.sync="formErrors" :form-data="formData" :form-rules="formRules" @submitted="submittedForm()">
-        <input placeholder="Date de naissance" class="form-control" type="text" onfocus="(this.type='date')" id="date">
-        <!-- <input class="form-control" id="full-name" type="date"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.fullName" placeholder="Nom et prénom" autocomplete="name" focus-first> -->
-        <div class="form-group">
 
-          <div class="invalid-feedback" v-if="formErrors.fullName">Date de naissance</div>
+        <div class="form-group">
+          <input placeholder="Date de naissance" class="form-control" type="text" onfocus="(this.type='date')" id="date" :class="[formErrors.date ? 'is-invalid' : '']">
+          <div class="invalid-feedback" v-if="formErrors.date">Veuillez entrer votre date de naissance.</div>
         </div>
 
         <div class="form-group ">
-          <select name="gender" class="form-control" id="gender" placeholder="Genre">
+          <select name="gender" class="form-control" id="gender" :class="[formErrors.gender ? 'is-invalid' : '']" v-model.trim="formData.gender" placeholder="Genre">
             <option value="" disabled selected hidden>Sélectionnez le sexe</option>
             <option value="Male">Mâle</option>
             <option value="Female">Femelle</option>
             <option value="Other">Autre</option>
           </select>
-          <div class="invalid-feedback" v-if="formErrors.fullName">S'il vous plait entrez votre nom entier.</div>
+          <div class="invalid-feedback" v-if="formErrors.gender">S'il vous plait entrez votre nom entier.</div>
         </div>
 
         <div class="form-group ">
-          <select name="country" class="form-control" id="gender" placeholder="pays">
+          <select name="country" class="form-control" id="gender" :class="[formErrors.country ? 'is-invalid' : '']" v-model.trim="formData.country" placeholder="pays">
             <option value="" disabled selected hidden>Choisissez le pays</option>
             <option value="Afganistan">Afghanistan</option>
                <option value="Albania">Albania</option>
@@ -272,26 +271,39 @@
                <option value="Zambia">Zambia</option>
                <option value="Zimbabwe">Zimbabwe</option>
           </select>
-          <div class="invalid-feedback" v-if="formErrors.fullName">S'il vous plait entrez votre nom entier.</div>
+          <div class="invalid-feedback" v-if="formErrors.country">S'il vous plait entrez votre nom entier.</div>
         </div>
 
         <div class="form-group">
 
           <input class="form-control" id="city" type="text"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.city" placeholder="Ville" autocomplete="name" >
-          <div class="invalid-feedback" v-if="formErrors.fullName">S'il vous plait entrez votre nom entier.</div>
+          <div class="invalid-feedback" v-if="formErrors.fullName">Veuillez entrer votre ville.</div>
         </div>
 
         <div class="form-group">
 
-          <input class="form-control" id="full-name" type="number"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.contact" placeholder="Numéro de contact" autocomplete="name" >
-          <div class="invalid-feedback" v-if="formErrors.fullName">S'il vous plait entrez votre nom entier.</div>
+          <input class="form-control" id="" type="contact"  :class="[formErrors.contact ? 'is-invalid' : '']" v-model.trim="formData.contact" placeholder="Numéro de contact" autocomplete="name" >
+          <div class="invalid-feedback" v-if="formErrors.fullName">Veuillez entrer votre numéro de contact.</div>
+        </div>
+
+        <div class="form-group ">
+          <select name="howDidYouHearAboutUs" class="form-control" id="gender" :class="[formErrors.howDidYouHearAboutUs ? 'is-invalid' : '']" v-model.trim="formData.howDidYouHearAboutUs">
+            <option value="" disabled selected hidden>Comment avez-vous entendu parler de nous</option>
+            <option value="Male">MPublicité sur Internet</option>
+            <option value="Female">Des médias sociaux</option>
+            <option value="Other">Avis client</option>
+            <option value="Other">Référence</option>
+            <option value="Other">Témoignages de clients</option>
+            <option value="Other">Autre</option>
+          </select>
+          <div class="invalid-feedback" v-if="formErrors.howDidYouHearAboutUs">Veuillez sélectionner comment avez-vous entendu parler de nous.</div>
         </div>
 
         <cloud-error v-if="cloudError==='emailAlreadyInUse'">Il semble qu'il existe déjà un compte avec votre adresse e-mail. Si vous avez oublié votre mot de passe, vous pouvez le récupérer <a href="password/forgot">here</a>.</cloud-error>
         <cloud-error v-else-if="cloudError"></cloud-error>
         <div class="row submitbutton">
           <div class="col-6">
-            <ajax-button :syncing="syncing" class="btn-dark btn-lg btn-block"><b>Suivant</b></ajax-button>
+            <ajax-button :syncing="syncing" class="btn-dark btn-lg btn-block"><b>suivante</b></ajax-button>
           </div>
           <div class="col-6 Forgot text-black">
             <a href="/signup"><i class="fa fa-chevron-left" aria-hidden="true" align="center"></i> &nbsp;&nbsp;Dos</a>

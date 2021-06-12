@@ -4,7 +4,11 @@ parasails.registerPage('signupsecond', {
   //  ╩╝╚╝╩ ╩ ╩╩ ╩╩═╝  ╚═╝ ╩ ╩ ╩ ╩ ╚═╝
   data: {
     // Form data
-    formData: { /* … */ },
+    formData: {
+howDidYouHearAboutUs:'',
+country:'',
+gender:'',
+    },
 
     // For tracking client-side validation errors in our form.
     // > Has property set to `true` for each invalid property in `formData`.
@@ -15,8 +19,13 @@ parasails.registerPage('signupsecond', {
       fullName: {required: true},
       emailAddress: {required: true, isEmail: true},
       password: {required: true},
+      contact: {required: true},
+      country: {required: true},
+      gender: {required: true},
+      howDidYouHearAboutUs: {required: true},
       confirmPassword: {required: true, sameAs: 'password'},
       agreed: {required: true},
+      date: {required: true},
     },
 
     // Syncing / loading state
