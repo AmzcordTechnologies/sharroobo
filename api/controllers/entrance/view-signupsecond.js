@@ -6,6 +6,14 @@ module.exports = {
 
   description: 'Display "Signupsecond" page.',
 
+  inputs: {
+
+    id: {
+      type: 'string'
+    }
+
+  },
+
 
   exits: {
 
@@ -16,10 +24,13 @@ module.exports = {
   },
 
 
-  fn: async function () {
+  fn: async function(inputs, exits) {
+
 
     // Respond with view.
-    return {};
+    return exits.success({
+      id: inputs.id,
+    });
 
   }
 

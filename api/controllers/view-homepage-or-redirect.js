@@ -32,7 +32,7 @@ module.exports = {
     var dateShow = moment(start).format("MMM Do YYYY");
 
     if (this.req.me) {
-      throw {redirect:'/welcome'};
+      throw {redirect:'/account'};
     }
 
     return exits.success({

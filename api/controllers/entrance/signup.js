@@ -66,7 +66,8 @@ the account verification message.)`,
   },
 
 
-  fn: async function ({emailAddress, password, fullName}) {
+  // fn: async function ({emailAddress, password, fullName, exits}) {
+  fn: async function ({emailAddress, password, fullName} ,exits) {
 
     var newEmailAddress = emailAddress.toLowerCase();
 
@@ -121,6 +122,11 @@ the account verification message.)`,
     } else {
       sails.log.info('Skipping new account email verification... (since `verifyEmailAddresses` is disabled)');
     }
+
+    return exits.success({
+      user: newUserRecord,
+    });
+
 
   }
 

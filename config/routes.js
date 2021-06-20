@@ -22,7 +22,7 @@ module.exports.routes = {
   'GET /contact':            { action:   'view-contact' },
 
   'GET /signup':             { action: 'entrance/view-signup' },
-  'GET /signupsecond': { action: 'entrance/view-signupsecond' },
+  'GET /signupsecond/:id?': { action: 'entrance/view-signupsecond' },
   'GET /email/confirm':      { action: 'entrance/confirm-email' },
   'GET /email/confirmed':    { action: 'entrance/view-confirmed-email' },
 
@@ -63,5 +63,6 @@ module.exports.routes = {
   'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
   'POST  /api/v1/observe-my-session':                 { action: 'observe-my-session', hasSocketFeatures: true },
+  'POST /api/v1/entrance/signupsecond': { action: 'entrance/signupsecond' },
 
 };

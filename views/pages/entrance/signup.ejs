@@ -3,7 +3,7 @@
     <h3 class="text-center title"><b>🚀C’est parti ! Initiez votre demande</b></h3>
     <div style="max-width: 450px;" class="mx-auto">
 
-      <ajax-form action="signup" :syncing.sync="syncing" :cloud-error.sync="cloudError" :form-errors.sync="formErrors" :form-data="formData" :form-rules="formRules" @submitted="submittedForm()">
+      <ajax-form action="signup" :syncing.sync="syncing" :cloud-error.sync="cloudError" :form-errors.sync="formErrors" :form-data="formData" :form-rules="formRules" @submitted="submittedForm($event)">
         <div class="form-group">
 
           <input class="form-control" id="full-name" type="text"  :class="[formErrors.fullName ? 'is-invalid' : '']" v-model.trim="formData.fullName" placeholder="Nom avec initiales" autocomplete="name" focus-first>

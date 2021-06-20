@@ -1,11 +1,9 @@
 #signupsecond {
-
   padding-top: 100px;
 
   input.form-control {
     padding: 30.5px 14px;
     font-size: 20px;
-
   }
 
   .col-6.Forgot {
@@ -30,30 +28,34 @@
   a:hover {
     color: #9381ff !important;
     text-decoration: none;
+  }
 
-    }
-
-    .btn-dark {
-      color: #fff;
-      background-color: #f7b585 !important;
-      border-color: #f7b585 !important;
+  .btn-dark {
+    color: #fff;
+    background-color: #f7b585 !important;
+    border-color: #f7b585 !important;
   }
 
   select#gender {
-      font-size: 20px;
-      height: 60px;
-      color: #7e858c !important;
+    font-size: 20px;
+    height: 60px;
+    color: #7e858c !important;
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
   }
 
-  /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
+  .row.progressbar {
+    height: 1px;
+    background-color: red;
+    margin: 20px 100px 30px;
+    /* padding-top: 10px; */
+  }
 }
