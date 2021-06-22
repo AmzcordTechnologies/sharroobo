@@ -73,7 +73,7 @@ parasails.registerPage('signupsecond', {
   //  ╩╝╚╝ ╩ ╚═╝╩╚═╩ ╩╚═╝ ╩ ╩╚═╝╝╚╝╚═╝
   methods: {
 
-    submittedForm: async function() {
+    submittedForm2: async function() {
       if (this.isEmailVerificationRequired) {
         // If email confirmation is enabled, show the success message.
         this.cloudSuccess = true;

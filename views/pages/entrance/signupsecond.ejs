@@ -3,7 +3,7 @@
     <h3 class="text-center title"><b>Informations Complémentaires</b></h3>
     <div style="max-width: 450px;" class="mx-auto">
 
-      <ajax-form action="signupsecond" :syncing.sync="syncing" :cloud-error.sync="cloudError" :form-errors.sync="formErrors" :form-data="formData" :form-rules="formRules" @submitted="submittedForm()">
+      <ajax-form action="signupsecond" :syncing.sync="syncing" :cloud-error.sync="cloudError" :form-errors.sync="formErrors" :form-data="formData" :form-rules="formRules" @submitted="submittedForm2()">
 
         <div class="form-group">
           <input placeholder="Date de naissance" class="form-control" type="text" onfocus="(this.type='date')" id="date" :class="[formErrors.date ? 'is-invalid' : '']" v-model.trim="formData.date">
